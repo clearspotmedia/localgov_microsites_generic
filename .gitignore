@@ -8,6 +8,10 @@ node_modules
 # Ignore mac OS files
 .DS_Store
 
+# Ignore node version manager, and style lint
+.nvmrc
+.stylelintrc.json
+
 # Ignore composer.lock as this is template project
 /composer.lock
 
