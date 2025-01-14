@@ -19,10 +19,13 @@ web > themes > custom
 
 The following modules can be installed and will inherit CSS from this theme:
 
-#### L[ocalGov EU Cookie Compliance]([url](https://github.com/localgovdrupal/localgov_eu_cookie_compliance))
+#### LocalGov EU Cookie Compliance
 Add a compliant cookie notice to your microsite.
 
+https://github.com/localgovdrupal/localgov_eu_cookie_compliance
 
-#### [LocalGov Group Alert Banner]([url](https://github.com/localgovdrupal/localgov_alert_banner/tree/1.x/modules/group_alert_banner))
+
+#### LocalGov Group Alert Banner
 Manage site alerts. Submodule of the 'localgov_alert_banner' module.
 
+https://github.com/localgovdrupal/localgov_alert_banner/tree/1.x/modules/group_alert_banner
