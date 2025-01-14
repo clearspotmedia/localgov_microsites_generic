@@ -17,7 +17,7 @@ web > themes > custom
 
 ### Optional modules
 
-The following modules can be installed and will pick up CSS from the this theme:
+The following modules can be installed and will inherit CSS from this theme:
 
 #### LocalGov EU Cookie Compliance
 Add a compliant cookie notice to your microsite.
