@@ -5,7 +5,7 @@ A sub theme of LocalGov Microsites Base, this theme prettifies an out the box mi
 UI improvements
 - Search bar respositioned into main header
 - Fixes made to page layout, alignment, spacing and sizing of elements
-- Better styling sypport for responsive 2 level menu
+- Better styling support for responsive 2 level menu
 - CSS snagging on all content types
 - Improved featured news layout 
 
