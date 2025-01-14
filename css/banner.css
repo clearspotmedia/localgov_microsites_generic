@@ -1,0 +1,52 @@
+.banner--primary .banner__content {
+  padding: var(--spacing-large) var(--spacing-large);
+}
+
+@media (width >= 768px) {
+  .banner--primary .banner__content {
+    padding: var(--spacing-large) var(--spacing-largest);
+  }
+}
+
+.banner--primary img {
+  min-height: 300px;
+  min-height: 18.75rem;
+  max-height: 340px;
+  max-height: 21.25rem;
+}
+
+.banner--primary .field--name-localgov-title {
+  font-family: var(--font-heading-1);
+  font-size: 2.375rem;
+  font-weight: var(--heading-1-font-weight);
+  line-height: var(--heading-1-line-height);
+  text-decoration: none;
+  margin-bottom: var(--spacing-smaller);
+}
+
+.banner--primary .field--name-localgov-subsites-banner-text {
+  font-family: var(--font-heading-4);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: var(--heading-4-line-height);
+  margin-bottom: var(--spacing-smaller);
+}
+
+@media (width >= 768px) {
+  .banner--primary .field--name-localgov-title {
+    font-size: var(--font-size-h1);
+  }
+
+  .banner--primary .field--name-localgov-subsites-banner-text {
+    font-size: var(--font-size-h4);
+  }
+}
+
+/*Banner secondary is a standalone image*/
+
+.banner--secondary img {
+  min-height: 300px;
+  min-height: 18.75rem;
+  max-height: 340px;
+  max-height: 21.25rem;
+}

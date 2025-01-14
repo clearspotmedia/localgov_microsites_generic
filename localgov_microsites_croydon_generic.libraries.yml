@@ -1,0 +1,108 @@
+variables:
+  css:
+    base:
+      css/variables.css: {}
+
+fontawesome:
+  js:
+    https://kit.fontawesome.com/0b686126e6.js: { type: external, minified: true }
+
+grid:
+   css:
+     theme:
+       css/grid.css: {}
+
+general:
+   css:
+     theme:
+       css/general.css: {}
+
+cookiebanner:
+   css:
+     theme:
+       css/cookiebanner.css: {}
+
+micrositemenu:
+   css:
+     theme:
+       css/microsite-menu.css: {}
+       
+flyoutmenu:
+   css:
+     theme:
+       css/flyout-menu.css: {}
+
+sidebarmenu:
+   css:
+     theme:
+       css/sidebar-menu.css: {}
+
+homepage:
+   css:
+     theme:
+       css/homepage.css: {}
+
+news:
+   css:
+     theme:
+       css/news.css: {}
+
+header:
+   css:
+     theme:
+       css/header.css: {}
+
+headersearch:
+   css:
+     theme:
+       css/headersearch.css: {}
+
+banner:
+   css:
+     theme:
+       css/banner.css: {}
+
+wysiwygstyles:
+   css:
+     theme:
+       css/wysiwygstyles.css: {}
+
+sitealert:
+   css:
+     theme:
+       css/sitealert.css: {}
+
+searchresults:
+   css:
+     theme:
+       css/searchresults.css: {}
+
+buttons:
+   css:
+     theme:
+       css/buttons.css: {}
+
+sidebarsecond:
+   css:
+     theme:
+       css/sidebarsecond.css: {}
+
+footer:
+   css:
+     theme:
+       css/footer.css: {}
+
+blog:
+   css:
+     theme:
+       css/blog.css: {}
+
+directory:
+   css:
+     theme:
+       css/directory.css: {}
+
+events:
+   css:
+     theme:
+       css/directory.css: {}

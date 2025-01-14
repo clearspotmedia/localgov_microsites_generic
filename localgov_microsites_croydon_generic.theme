@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Theme function for the Localgov Safeguarding Microsite theme.
+ */
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * - The sitewide search result page's title should say "Search result" and
+ *   nothing else.
+ *
+ * @see localgov_search_views_pre_render()
+ */
+function localgov_microsites_croydon_generic_views_pre_render(ViewExecutable $view) {
+
+  if (
+    isset($view->element['#name']) &&
+    $view->element['#name'] == 'localgov_sitewide_search' &&
+    isset($view->element['#display_id']) &&
+    $view->element['#display_id'] == 'sitewide_search_page'
+  ) {
+    $view->setTitle(t('Search results'));
+  }
+}

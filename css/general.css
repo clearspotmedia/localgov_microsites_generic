@@ -1,0 +1,127 @@
+a {
+  text-decoration: underline;
+}
+
+.full .field--name-localgov-page-summary {
+  font-size: 1.25rem;
+  padding-bottom: var(--spacing);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ededed;
+  max-width: 100%;
+}
+
+@media (width >= 992px) {
+  .full .field--name-localgov-page-summary {
+    font-size: 1.375rem;
+  }
+}
+
+main p,
+main ul,
+main ol {
+  font-size: 1.125rem;
+}
+
+main h1 {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing);
+}
+
+.field--name-localgov-text h2:first-of-type {
+  margin-top: 0;
+}
+
+.field--name-localgov-text h2,
+.field--name-localgov-text h3,
+.field--name-localgov-text h4,
+.field--name-localgov-text h5,
+.field--name-localgov-text h6 {
+  margin-top: var(--spacing-larger);
+  margin-bottom: var(--spacing);
+}
+
+@media (width >= 992px) {
+  .field--name-localgov-text p,
+  .field--name-localgov-text ul,
+  .field--name-localgov-text ol {
+    font-size: 1.1875rem;
+  }
+
+  article h1 {
+    font-size: 2.875rem;
+  }
+  article h2 {
+    font-size: 2.125rem;
+  }
+  article h3 {
+    font-size: 1.75rem;
+  }
+  article h4 {
+    font-size: 1.5rem;
+  }
+  article h5 {
+    font-size: 1.375rem;
+  }
+  .field--name-localgov-text h6 {
+    font-size: 1.25rem;
+  }
+}
+
+.full__banner,
+.full__title,
+.full__breadcrumbs {
+  margin-bottom: var(--spacing);
+}
+
+footer p,
+footer ul {
+  font-size: 1rem;
+}
+
+/*Purple links on grey bg*/
+.lgd-page-section--bg-colour-3 a {
+  color: var(--color-accent);
+}
+
+.lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.lgd-teaser__content--localgov-news-article a {
+  text-decoration: underline;
+}
+
+.lgd-teaser__content--localgov-news-article a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+
+.block-localgov-eu-cookie-compliance {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.eu-cookie-compliance-banner {
+  margin: 0 auto;
+  padding-right: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+}
+
+@media (width >= 992px) {
+  .eu-cookie-compliance-banner {
+    padding-right: 300px;
+  }
+}
+
+aside.lgd-row__one-third {
+  padding-top: 1.5rem;
+}
+
+.full .field--name-localgov-directory-standfirst {
+  max-width: var(--width-restricted-width-section);
+  margin-bottom: var(--spacing-larger);
+}

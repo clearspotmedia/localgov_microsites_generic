@@ -1,0 +1,105 @@
+/* Add background colour variable to outer header */
+.microsite-header {
+  background: var(--header-background-color);
+}
+
+/* No padding at bottom of header so active page tabs are flush */
+.region-microsites-header {
+  padding: var(--spacing) 0 0 0;
+}
+
+/* Include vertical padding on mobile header */
+@media screen and (max-width: 768px) {
+  .region-microsites-header {
+    padding: var(--spacing) 0;
+  }
+}
+
+/* The flex wrapper for logo, slogan, and menu toggle */
+.microsite-header__main {
+  position: relative;
+  display: flex;
+  justify-items: flex-start;
+}
+
+/* Vertical center logo so it works with 1 or 2 line slogan */
+.microsite-header__logo {
+  align-self: center;
+}
+
+/* Position site slogan next to the logo */
+.microsite-header__name-slogan {
+  min-height: 45px;
+  height: fit-content;
+  border-left: 1px solid var(--header-text-color);
+  padding-left: var(--spacing-padding-horizontal);
+  max-width: 100%;
+  display: flex;
+  line-height: initial;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Vertically center the site slogan inner text */
+.microsite-header__name {
+  align-content: center;
+}
+
+/* Set a max width on the site slogan on mobile */
+@media screen and (max-width: 768px) {
+  .microsite-header__name-slogan {
+    max-width: 200px;
+  }
+}
+
+/* Custom class so we can reposition the pre header (search bar) */
+.microsite-header-inner {
+  position: relative;
+  max-width: 73.75rem; /*1180px*/
+  margin: 0 auto;
+}
+
+/* Move the pre header (search bar) into main header */
+.microsite-header__pre-header {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+  padding: 0;
+  background: none;
+}
+
+/* Hide pre header (search bar) on mobile - search is in burger menu instead */
+@media screen and (max-width: 768px) {
+  .microsite-header__pre-header {
+    display: none;
+  }
+}
+
+/* Wrapper for full width navigation */
+.microsite-header__menus {
+  width: 100%;
+  max-width: inherit;
+}
+
+/* Inner wrapper for full width navigation */
+.microsite-header__menu--main {
+  width: 100%;
+  max-width: var(--width-container);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+/* Site logo hover and focus */
+.microsite-header__logo a:hover {
+  box-shadow: 0 0 0 0.125rem #fb0 !important;
+  display: block;
+  background: none;
+}
+
+.microsite-header__logo a:focus {
+  box-shadow: 0 0 0 0.125rem #fff !important;
+  display: block;
+  background: none;
+}

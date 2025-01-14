@@ -1,0 +1,70 @@
+/*Newsroom featured news inner content*/
+.newsroom__featured-news .lgd-teaser__content {
+  padding: var(--spacing) 0 var(--spacing-larger) 0;
+  width: 95%;
+}
+
+/*Newsroom featured news*/
+@media screen and (min-width: 48rem) {
+  .newsroom__featured-news .lgd-teaser {
+    border: 0;
+  }
+
+  /*Newsroom featured news inner content*/
+  .newsroom__featured-news .lgd-teaser__content {
+    padding: var(--spacing) 0 var(--spacing-larger) 0;
+  }
+}
+
+/*News feed - Keylines above each item*/
+.lgd-teaser-list .views-row {
+  border-top: 1px solid var(--color-text);
+  padding-top: 1.5rem;
+  border-bottom: 0;
+}
+
+/*Newsroom new feed items inner content*/
+.lgd-teaser-list .lgd-teaser__image + .lgd-teaser__content {
+  margin-left: var(--spacing-larger);
+}
+.lgd-teaser__content--localgov-news-article a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+.lgd-teaser__content--localgov-news-article a:hover {
+  text-decoration: underline;
+}
+.lgd-teaser__content--localgov-news-article a:hover:focus {
+  text-decoration: none;
+}
+
+/*Category links under featured and news feed*/
+.lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime {
+  font-size: .8rem;
+  position: relative;
+  padding: 0 0 0 20px;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+/*Category icon*/
+.lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime:before {
+  position: absolute;
+  left: 0;
+  content: var(--calendar);
+  color: var(--color-accent);
+  font-family: var(--font-fa-pro);
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+/*Published date on articles*/
+.field--type-datetime{
+  padding-bottom: var(--spacing);
+  font-size: 1rem;
+}
+
+/*Hide RSS link*/
+.feed-icons {
+  display: none;
+}

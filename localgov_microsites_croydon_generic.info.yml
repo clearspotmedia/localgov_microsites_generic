@@ -1,0 +1,55 @@
+name: "Localgov Microsite Generic"
+description: "Your sub-theme, which uses localgov_microsites_base as its base theme."
+type: theme
+core_version_requirement: ^9 || ^10
+base theme: "localgov_microsites_base"
+
+libraries-extend:
+  localgov_microsites_base/variables:
+    - localgov_microsites_croydon_generic/general
+    - localgov_microsites_croydon_generic/fontawesome
+    - localgov_microsites_croydon_generic/variables
+    - localgov_microsites_croydon_generic/header
+    - localgov_microsites_croydon_generic/headersearch
+    - localgov_microsites_croydon_generic/banner
+    - localgov_microsites_croydon_generic/cookiebanner
+    - localgov_microsites_croydon_generic/sidebarsecond
+    - localgov_microsites_croydon_generic/searchresults
+    - localgov_microsites_croydon_generic/footer
+    - localgov_microsites_croydon_generic/buttons
+    - localgov_microsites_croydon_generic/homepage
+    - localgov_microsites_croydon_generic/news
+    - localgov_microsites_croydon_generic/flyoutmenu
+    - localgov_microsites_croydon_generic/micrositemenu
+    - localgov_microsites_croydon_generic/sidebarmenu
+    - localgov_microsites_croydon_generic/grid
+    - localgov_microsites_croydon_generic/wysiwygstyles
+    - localgov_microsites_croydon_generic/sitealert
+    - localgov_microsites_croydon_generic/blog
+    - localgov_microsites_croydon_generic/directory
+    - localgov_microsites_croydon_generic/events
+
+libraries-override:
+  localgov_microsites_base/menu:
+    css:
+      theme:
+        css/components/menu.css: css/menu-override.css
+
+regions:
+  tabs: "Tabs"
+  off_canvas: "Off-canvas"
+  header: "Header"
+  search: "Search"
+  main_menu: "Main menu"
+  banner: "Banner"
+  utility_menu: "Utility menu"
+  page_title: "Page title"
+  messages: "Messages"
+  content_top: "Content top"
+  content: "Content"
+  content_bottom: "Content bottom"
+  sidebar_first: "Sidebar first"
+  sidebar_second: "Sidebar second"
+  footer_menu: "Footer menu"
+  footer: "Footer"
+  disabled: "Disabled"

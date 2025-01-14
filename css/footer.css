@@ -1,0 +1,9 @@
+.region-microsites-footer a {
+  color: var(--color-accent);
+}
+
+@media screen and (width <= 768px) {
+  .microsite-footer .lgd-row__one-quarter {
+    width: 100%;
+  }
+}

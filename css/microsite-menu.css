@@ -1,0 +1,386 @@
+/*Main full width menu*/
+
+/*Wrapper for main menu*/
+.lgd-region--main-menu {
+    display: flex;
+}
+
+/*Inner wrapper for main menu*/
+.lgd-region--main-menu .menu {
+    padding-left: 0;
+}
+
+/*Make inner menu wrapper full width*/
+.lgd-region--main-menu .padding-horizontal {
+    max-width: inherit;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*Main menu link*/
+.region-microsites-header .menu li a {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+/*Main menu link hover*/
+.region-microsites-header .menu li a:hover {
+    color: var(--header-link-color);
+    text-decoration: underline;
+}
+
+/*Main menu link focus*/
+.region-microsites-header .menu li a:focus,
+.region-microsites-header .menu li:focus a {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/*Main menu link focus toggle icon inside*/
+.region-microsites-header .menu li a:focus + .menu__sub-menu-toggle:after {
+    color: var(--color-black);
+}
+
+/*Main menu active tab*/
+.menu-item--active-trail,
+.menu-item--active-trail .menu {
+    background-color: var(--header-link-color);
+}
+
+/*Main menu active tab link and toggle colour*/
+.menu-item--active-trail a,
+.menu-item--active-trail .menu__sub-menu-toggle:after {
+    color: var(--header-background-color);
+}
+
+.region-microsites-header .menu .menu-item--active-trail a:hover {
+    color: var(--header-background-color);
+}
+
+/*Main menu - Parent of sub page*/
+.menu-item--level-0.menu-item--expanded {
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+
+/*Main menu button element placed inside the parent li, to trigger the sub-menu*/
+.region-microsites-header .menu__sub-menu-toggle {
+    align-content: center;
+    height: 100%;
+    background: none;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 0;
+    right: 5px;
+    width: var(--menu-sub-menu-toggle-width);
+    padding: 0;
+    font-size: var(--menu-main-font-size);
+    font-weight: var(--menu-main-font-weight);
+    outline: none;
+    box-shadow: none;
+}
+
+.region-microsites-header .menu__sub-menu-toggle:hover {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/* Main menu, sub menu toggle button chevron */
+.js .menu__sub-menu-toggle:after {
+    color: var(--header-link-color);
+    content: var(--chevron-down);
+    pointer-events: none;
+    font-family: var(--font-fa-pro);
+    font-weight: 900;
+    font-size: 1rem;
+    background: none;
+}
+
+/*Main menu, sub menu toggle button and links in active trail*/
+.js .off-canvas .menu .menu-item--active-trail .menu-item--level-1 a,
+.js .off-canvas .menu .menu-item--active-trail .menu-item--level-1 a:hover,
+.js .menu-item--active-trail .menu__sub-menu-toggle:after {
+    color: var(--header-background-color);
+}
+
+/*Main menu, link colour*/
+.off-canvas a {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/*Main menu, sub menu toggle icon rotation*/
+.js .menu__sub-menu-toggle[aria-expanded="true"]:after {
+    content: var(--chevron-up);
+    font-family: var(--font-fa-pro);
+    font-weight: 900;
+}
+
+/*Main menu, sub menu toggle icon focus style*/
+.region-microsites-header .menu__sub-menu-toggle:focus:after,
+.off-canvas .menu__sub-menu-toggle:focus:after,
+.off-canvas .menu__sub-menu-toggle:focus-visible:after {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Main menu expanded items (they have sub pages)*/
+.region-microsites-header .menu li.menu-item--expanded a {
+    padding-right: 30px;
+}
+
+/* Main menu expanded items link hover */
+.region-microsites-header .menu li.menu-item--expanded a:hover {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/* Main menu expanded items focus (they have sub pages)*/
+.region-microsites-header .menu li.menu-item--expanded a:focus {
+    color: var(--color-black);
+}
+
+/* Main menu link when both active and expanded*/
+.region-microsites-header .menu .menu-item--expanded.menu-item--active-trail a {
+    color: var(--header-background-color);
+}
+
+/* Main menu link when both active and expanded*/
+.region-microsites-header .menu .menu-item--expanded.menu-item--active-trail a:hover {
+    color: var(--header-background-color);
+}
+
+/*Main menu, sub menu toggle icon transition time*/
+.region-microsites-header .menu__sub-menu-toggle-icon {
+    display: inline-block;
+}
+
+/*Expanded mobile menu*/
+/*Using off-canvas as a class prefix will apply these styles to the mobile menu only, without the need for a breakpoint*/
+/*Wrapper for mobile menu, hide on desktop*/
+.off-canvas {
+    display: none;
+    top: 0;
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+
+/*Mobile menu toggle*/
+.microsite-header__off-canvas-toggle {
+    background-color: var(--header-background-color);
+    color: var(--menu-sub-menu-link-colour);
+    border-color: var(--menu-sub-menu-link-colour);
+}
+/*Mobile menu toggle hover*/
+.microsite-header__off-canvas-toggle:hover {
+    background-color: var(--menu-sub-menu-link-colour);
+    color: var(--header-background-color);
+    border-color: var(--menu-sub-menu-link-colour);
+    box-shadow: none;
+}
+
+/*Mobile menu trigger in active state*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"],
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:focus {
+    background-color: var(--header-background-color);
+    color: var(--color-focus);
+    border-color: var(--color-focus);
+}
+
+/*Mobile menu trigger active state hover*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover {
+    color: var(--menu-sub-menu-link-colour);
+    border-color: var(--menu-sub-menu-link-colour);
+}
+
+/*Mobile menu trigger active state hover*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover:before {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/*Wrapper for expanded mobile menu, position under header*/
+@media screen and (max-width: 768px) {
+    .off-canvas[data-expanded="true"] {
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 var(--spacing) var(--spacing);
+        height: auto;
+        border: 0;
+    }
+}
+
+/*Make elements inside off canvas full width*/
+.off-canvas[data-expanded="true"] .region-off-canvas {
+    padding-top: 0;
+    width: 100%;
+}
+
+/*Remove unwanted padding from mobile menu*/
+.off-canvas .menu {
+    margin: 0px 0 25px 0;
+    padding: 0;
+}
+
+/*Remove unwanted padding from search form*/
+.off-canvas form {
+    padding: 0;
+}
+
+/*Search full width*/
+.off-canvas .js-form-item {
+    flex-basis: 100%;
+}
+
+/*Search full width*/
+.off-canvas input.form-text {
+    width: 100%;
+}
+
+/*SPrevent mozilla changing placeholder opacity*/
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+/*Make sub menu in the flow not absolute*/
+.off-canvas .menu .menu {
+    position: relative;
+    margin: 10px 0 0 0;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+/*Make elements inside off canvas full width*/
+.off-canvas .lgd-region__inner--off-canvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Hide additional close button*/
+.off-canvas__close {
+    display: none;
+}
+
+/*Mobile menu items*/
+.off-canvas .menu-item {
+    pointer-events: initial;
+    position: relative;
+    width: auto;
+    padding: 8px 0px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--menu-sub-menu-link-colour);
+}
+
+/*Main menu active tab mobile*/
+.off-canvas .menu-item--active-trail {
+    /*background-color: var(--color-white);*/
+}
+
+/*Main menu active tab link mobile*/
+.off-canvas .menu-item--active-trail a {
+    padding: 0 8px;
+    color: var(--header-background-color);
+}
+
+/*Main menu active tab link mobile*/
+.off-canvas .menu-item.menu-item--active-trail a:hover {
+    color: var(--header-background-color);
+    text-decoration: underline;
+}
+
+/*Mobile menu items*/
+.off-canvas .menu-item a {
+    text-decoration: none;
+}
+
+/*Mobile menu item hover*/
+.off-canvas .menu-item a:hover {
+    text-decoration: underline;
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/*Mobile menu item focus*/
+.off-canvas .menu-item a:focus,
+.off-canvas .menu-item a:focus:hover {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/*Mobile menu has children*/
+.off-canvas .menu-item.menu-item--expanded {
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+/*Mobile menu has children link*/
+.off-canvas .menu-item.menu-item--expanded a {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/*Mobile menu has children and is active trail link*/
+.off-canvas .menu-item.menu-item--expanded.menu-item--active-trail a {
+    color: var(--header-background-color);
+}
+
+/*Mobile menu expanded item focus*/
+.off-canvas .menu-item.menu-item--expanded a:focus,
+.off-canvas .menu-item.menu-item--expanded a:focus:hover {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/*Mobile menu reposition menu toggle icon*/
+.off-canvas .menu__sub-menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: none;
+    padding: 0;
+    outline: none;
+}
+
+/*Mobile menu toggle hover state*/
+.off-canvas .menu__sub-menu-toggle:hover {
+    box-shadow: none;
+    color: var(--menu-sub-menu-link-colour);
+}
+
+.region-microsites-header .menu__sub-menu-toggle:focus:hover::after {
+    color: var(--color-black);
+}
+
+/*Sub menu items mobile*/
+.js .off-canvas .menu .menu-item--level-1 {
+    border: none;
+}
+
+/*Sub menu items mobile*/
+.js .off-canvas .menu .menu-item--level-1 a {
+    color: var(--menu-sub-menu-link-colour);
+    text-decoration: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: var(--font-size);
+}
+
+/*Sub menu items mobile*/
+.js .off-canvas .menu .menu-item--level-1 a:hover {
+    color: var(--menu-sub-menu-link-colour);
+    text-decoration: underline;
+}
