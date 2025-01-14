@@ -1,4 +1,4 @@
-#LocalGov Microsites Generic Theme
+# LocalGov Microsites Generic Theme
 
 A sub theme of LocalGov Microsites Base, this theme prettifies an out the box microsite, while maintaining full edibility of brand settings in the CMS.
 
@@ -9,13 +9,13 @@ UI improvements
 - CSS snagging on all content types
 - Improved featured news layout 
 
-##Installation
+## Installation
 
 Install this theme in your Drupal project via zip upload, or clone to the custom theme directory:
 
 web > themes > custom 
 
-###optional modules
+### Optional modules
 
 The following modules can be installed and will pick up CSS from the this theme:
 
