@@ -1,0 +1,60 @@
+.off-canvas {
+    display: none;
+    top: 0;
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+}
+
+/*Mobile menu toggle*/
+.microsite-header__off-canvas-toggle {
+    background-color: var(--header-background-color);
+    color: var(--menu-sub-menu-link-colour);
+    border-color: var(--menu-sub-menu-link-colour);
+}
+/*Mobile menu toggle hover*/
+.microsite-header__off-canvas-toggle:hover {
+    background-color: var(--menu-sub-menu-link-colour);
+    color: var(--header-background-color);
+    border-color: var(--menu-sub-menu-link-colour);
+    box-shadow: none;
+}
+
+/*Mobile menu trigger in active state*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"],
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:focus {
+    background-color: var(--header-background-color);
+    color: var(--color-focus);
+    border-color: var(--color-focus);
+}
+
+/*Mobile menu trigger active state hover*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover {
+    color: var(--menu-sub-menu-link-colour);
+    border-color: var(--menu-sub-menu-link-colour);
+}
+
+/*Mobile menu trigger active state hover*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover:before {
+    color: var(--menu-sub-menu-link-colour);
+}
+
+/*Wrapper for expanded mobile menu, position under header*/
+@media screen and (max-width: 768px) {
+    .off-canvas[data-expanded="true"] {
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 var(--spacing) var(--spacing);
+        height: auto;
+        border: 0;
+    }
+}
+
+/*Make elements inside off canvas full width*/
+.off-canvas[data-expanded="true"] .region-off-canvas {
+    padding-top: 0;
+    width: 100%;
+}

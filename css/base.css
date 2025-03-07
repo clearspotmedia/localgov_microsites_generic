@@ -125,3 +125,77 @@ aside.lgd-row__one-third {
   max-width: var(--width-restricted-width-section);
   margin-bottom: var(--spacing-larger);
 }
+
+/*Page builder blocks overrides*/
+
+/*Reduce space between image and headline in featured teasers*/
+.paragraph--type--localgov-featured-teasers .field__item picture {
+  margin-bottom: var(--spacing);
+}
+
+.link--button-style {
+  display: flex;
+  width: 100%;
+}
+.link--button-style .link-wrapper {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: var(--text-input-font-family);
+  font-size: var(--font-size-medium);
+  font-weight: 700;
+}
+.link--button-style .link-wrapper .link-content a {
+  display: inline-block;
+  padding: 15px;
+}
+.link--button-style .link-wrapper .link-icon {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .view-display-id-latest_news .view-content {
+    display: flex;
+    gap: 0 var(--spacing-larger);
+  }
+}
+
+@media screen and (width >= 768px) {
+  .view-display-id-latest_news .view-content .views-row {
+    flex: 1 1 calc(calc(100% / 3) - var(--spacing-larger) * 3);
+    border-bottom: 0;
+  }
+}
+.view-display-id-latest_news .view-content .views-row .lgd-teaser {
+  display: inline-block;
+}
+.view-display-id-latest_news .view-content .views-row .lgd-teaser a {
+  text-decoration: none;
+  color: var(--black);
+}
+.view-display-id-latest_news .view-content .views-row .lgd-teaser .field--name-localgov-news-date {
+  color: var(--color-dark-grey);
+  font-weight: 700;
+}
+.view-display-id-latest_news .view-content .views-row .lgd-teaser .lgd-teaser__image {
+  width: 100%;
+}
+.view-display-id-latest_news .lgd-teaser__content--localgov-news-article {
+  margin-left: 0;
+  padding-top: 20px;
+}
+.full__layout-section .field--name-localgov-paragraph-content > .field__item {
+  padding: 45px 0;
+}
+
+.paragraph--type--localgov-page-section .paragraph--type--localgov-text .field--name-localgov-text ul {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.full__layout-section > .field--name-localgov-paragraph-content > .field__item {
+  padding: 0;
+}
+

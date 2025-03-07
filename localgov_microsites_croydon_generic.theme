@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Theme function for the Localgov Safeguarding Microsite theme.
+ * Theme function for the Localgov Generic Microsite theme.
  */
 
 use Drupal\views\ViewExecutable;

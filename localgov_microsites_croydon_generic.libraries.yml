@@ -1,108 +1,88 @@
+fontawesome:
+  js:
+    https://kit.fontawesome.com/0b686126e6.js: { type: external, minified: true }
+
 variables:
   css:
     base:
       css/variables.css: {}
 
-fontawesome:
-  js:
-    https://kit.fontawesome.com/0b686126e6.js: { type: external, minified: true }
-
 grid:
-   css:
-     theme:
-       css/grid.css: {}
+  css:
+    theme:
+      css/grid.css: {}
+      
+base:
+  css:
+    theme:
+      css/base.css: {}
 
-general:
-   css:
-     theme:
-       css/general.css: {}
+alert-banner:
+  css:
+    theme:
+      css/alert-banner.css: {}
 
-cookiebanner:
-   css:
-     theme:
-       css/cookiebanner.css: {}
-
-micrositemenu:
-   css:
-     theme:
-       css/microsite-menu.css: {}
-       
-flyoutmenu:
-   css:
-     theme:
-       css/flyout-menu.css: {}
-
-sidebarmenu:
-   css:
-     theme:
-       css/sidebar-menu.css: {}
-
-homepage:
-   css:
-     theme:
-       css/homepage.css: {}
-
-news:
-   css:
-     theme:
-       css/news.css: {}
+localgov_eu_cookie_compliance:
+  css:
+    theme:
+      css/localgov_eu_cookie_compliance.css: {}
 
 header:
-   css:
-     theme:
-       css/header.css: {}
-
-headersearch:
-   css:
-     theme:
-       css/headersearch.css: {}
+  css:
+    theme:
+      css/header.css: {}
 
 banner:
-   css:
-     theme:
-       css/banner.css: {}
+  css:
+    theme:
+      css/banner.css: {}
 
-wysiwygstyles:
-   css:
-     theme:
-       css/wysiwygstyles.css: {}
-
-sitealert:
-   css:
-     theme:
-       css/sitealert.css: {}
-
-searchresults:
-   css:
-     theme:
-       css/searchresults.css: {}
-
-buttons:
-   css:
-     theme:
-       css/buttons.css: {}
-
-sidebarsecond:
-   css:
-     theme:
-       css/sidebarsecond.css: {}
+sidebar:
+  css:
+    theme:
+      css/sidebar.css: {}
 
 footer:
-   css:
-     theme:
-       css/footer.css: {}
+  css:
+    theme:
+      css/footer.css: {}
+
+off-canvas:
+  css:
+    theme:
+      css/off-canvas.css: {}
+      
+menu:
+  css:
+    theme:
+      css/menu.css: {}
+
+wysiwyg-styles:
+  css:
+    theme:
+      css/wysiwyg-styles.css: {}
+
+news:
+  css:
+    theme:
+      css/news.css: {}
 
 blog:
-   css:
-     theme:
-       css/blog.css: {}
+  css:
+    theme:
+      css/blog.css: {}
 
-directory:
-   css:
-     theme:
-       css/directory.css: {}
+directories:
+  css:
+    theme:
+      css/directories.css: {}
 
 events:
-   css:
-     theme:
-       css/directory.css: {}
+  css:
+    theme:
+      css/events.css: {}
+
+sitewide-search:
+  css:
+    theme:
+      css/sitewide-search.css: {}

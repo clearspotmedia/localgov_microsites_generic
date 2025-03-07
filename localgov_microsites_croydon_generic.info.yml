@@ -5,29 +5,42 @@ core_version_requirement: ^9 || ^10
 base theme: "localgov_microsites_base"
 
 libraries-extend:
-  localgov_microsites_base/variables:
-    - localgov_microsites_croydon_generic/general
+  localgov_microsites_base/fontawesome:
     - localgov_microsites_croydon_generic/fontawesome
+  localgov_microsites_base/variables:
     - localgov_microsites_croydon_generic/variables
-    - localgov_microsites_croydon_generic/header
-    - localgov_microsites_croydon_generic/headersearch
-    - localgov_microsites_croydon_generic/banner
-    - localgov_microsites_croydon_generic/cookiebanner
-    - localgov_microsites_croydon_generic/sidebarsecond
-    - localgov_microsites_croydon_generic/searchresults
-    - localgov_microsites_croydon_generic/footer
-    - localgov_microsites_croydon_generic/buttons
-    - localgov_microsites_croydon_generic/homepage
-    - localgov_microsites_croydon_generic/news
-    - localgov_microsites_croydon_generic/flyoutmenu
-    - localgov_microsites_croydon_generic/micrositemenu
-    - localgov_microsites_croydon_generic/sidebarmenu
+  localgov_base/grid:
     - localgov_microsites_croydon_generic/grid
-    - localgov_microsites_croydon_generic/wysiwygstyles
-    - localgov_microsites_croydon_generic/sitealert
+  localgov_microsites_base/base:
+    - localgov_microsites_croydon_generic/base
+  localgov_base/alert-banner:
+    - localgov_microsites_croydon_generic/alert-banner
+  localgov_base/localgov_eu_cookie_compliance:
+    - localgov_microsites_croydon_generic/localgov_eu_cookie_compliance
+  localgov_microsites_base/header:
+    - localgov_microsites_croydon_generic/header
+  localgov_microsites_base/banner:
+    - localgov_microsites_croydon_generic/banner
+  localgov_microsites_base/sidebar:
+    - localgov_microsites_croydon_generic/sidebar
+  localgov_microsites_base/footer:
+    - localgov_microsites_croydon_generic/footer
+  localgov_microsites_base/off-canvas:
+    - localgov_microsites_croydon_generic/off-canvas
+  localgov_microsites_base/menu:
+    - localgov_microsites_croydon_generic/menu
+  localgov_base/wysiwyg-styles:
+    - localgov_microsites_croydon_generic/wysiwyg-styles
+  localgov_base/news:
+    - localgov_microsites_croydon_generic/news
+  localgov_base/blog:
     - localgov_microsites_croydon_generic/blog
-    - localgov_microsites_croydon_generic/directory
+  localgov_microsites_base/directories:
+    - localgov_microsites_croydon_generic/directories
+  localgov_microsites_base/events:
     - localgov_microsites_croydon_generic/events
+  localgov_base/sitewide-search:
+    - localgov_microsites_croydon_generic/sitewide-search
 
 libraries-override:
   localgov_microsites_base/menu:

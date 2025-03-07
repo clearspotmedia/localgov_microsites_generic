@@ -40,7 +40,7 @@
 
 /*Category links under featured and news feed*/
 .lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime {
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: relative;
   padding: 0 0 0 20px;
   color: var(--color-text);
@@ -54,12 +54,12 @@
   content: var(--calendar);
   color: var(--color-accent);
   font-family: var(--font-fa-pro);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 900;
 }
 
 /*Published date on articles*/
-.field--type-datetime{
+.field--type-datetime {
   padding-bottom: var(--spacing);
   font-size: 1rem;
 }
