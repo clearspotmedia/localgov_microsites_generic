@@ -1,13 +1,13 @@
 {
-  "name": "localgov_microsites_croydon_generic",
-  "version": "1.0.0",
-  "description": "NPM scripts for the localgov_microsites_croydon_generic theme.",
+  "name": "localgov_microsites_generic",
+  "version": "1.0.1",
+  "description": "NPM scripts for the localgov_microsites_generic theme.",
   "main": "index.js",
   "scripts": {
     "start": "npm run lint:css",
     "lint:css": "stylelint \"**/*.css\" --fix"
   },
-  "author": "Chris Stevens",
+  "author": "Design Dave Hampton Clearspot Media",
   "license": "ISC",
   "devDependencies": {
     "stylelint": "^7.13.0",

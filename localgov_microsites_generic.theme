@@ -15,7 +15,7 @@ use Drupal\views\ViewExecutable;
  *
  * @see localgov_search_views_pre_render()
  */
-function localgov_microsites_croydon_generic_views_pre_render(ViewExecutable $view) {
+function localgov_microsites_generic_views_pre_render(ViewExecutable $view) {
 
   if (
     isset($view->element['#name']) &&

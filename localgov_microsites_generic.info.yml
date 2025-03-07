@@ -1,46 +1,46 @@
-name: "Localgov Microsite Generic"
-description: "Your sub-theme, which uses localgov_microsites_base as its base theme."
+name: "Localgov Microsites Generic"
+description: "V1.0.1 A sub theme that prettifies your LocalGov Microsite, while maintaining full design control in the Drupal design settings."
 type: theme
 core_version_requirement: ^9 || ^10
 base theme: "localgov_microsites_base"
 
 libraries-extend:
   localgov_microsites_base/fontawesome:
-    - localgov_microsites_croydon_generic/fontawesome
+    - localgov_microsites_generic/fontawesome
   localgov_microsites_base/variables:
-    - localgov_microsites_croydon_generic/variables
+    - localgov_microsites_generic/variables
   localgov_base/grid:
-    - localgov_microsites_croydon_generic/grid
+    - localgov_microsites_generic/grid
   localgov_microsites_base/base:
-    - localgov_microsites_croydon_generic/base
+    - localgov_microsites_generic/base
   localgov_base/alert-banner:
-    - localgov_microsites_croydon_generic/alert-banner
+    - localgov_microsites_generic/alert-banner
   localgov_base/localgov_eu_cookie_compliance:
-    - localgov_microsites_croydon_generic/localgov_eu_cookie_compliance
+    - localgov_microsites_generic/localgov_eu_cookie_compliance
   localgov_microsites_base/header:
-    - localgov_microsites_croydon_generic/header
+    - localgov_microsites_generic/header
   localgov_microsites_base/banner:
-    - localgov_microsites_croydon_generic/banner
+    - localgov_microsites_generic/banner
   localgov_microsites_base/sidebar:
-    - localgov_microsites_croydon_generic/sidebar
+    - localgov_microsites_generic/sidebar
   localgov_microsites_base/footer:
-    - localgov_microsites_croydon_generic/footer
+    - localgov_microsites_generic/footer
   localgov_microsites_base/off-canvas:
-    - localgov_microsites_croydon_generic/off-canvas
+    - localgov_microsites_generic/off-canvas
   localgov_microsites_base/menu:
-    - localgov_microsites_croydon_generic/menu
+    - localgov_microsites_generic/menu
   localgov_base/wysiwyg-styles:
-    - localgov_microsites_croydon_generic/wysiwyg-styles
+    - localgov_microsites_generic/wysiwyg-styles
   localgov_base/news:
-    - localgov_microsites_croydon_generic/news
+    - localgov_microsites_generic/news
   localgov_base/blog:
-    - localgov_microsites_croydon_generic/blog
+    - localgov_microsites_generic/blog
   localgov_microsites_base/directories:
-    - localgov_microsites_croydon_generic/directories
+    - localgov_microsites_generic/directories
   localgov_microsites_base/events:
-    - localgov_microsites_croydon_generic/events
+    - localgov_microsites_generic/events
   localgov_base/sitewide-search:
-    - localgov_microsites_croydon_generic/sitewide-search
+    - localgov_microsites_generic/sitewide-search
 
 libraries-override:
   localgov_microsites_base/menu:
