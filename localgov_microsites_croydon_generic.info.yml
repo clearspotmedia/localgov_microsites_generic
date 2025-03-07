@@ -1,5 +1,5 @@
-name: "Localgov Microsite Generic"
-description: "Your sub-theme, which uses localgov_microsites_base as its base theme."
+name: "Localgov Microsites Croydon Generic"
+description: "A sub theme that prettifies your LocalGov Microsite, while maintaining full design control in the Drupal design settings."
 type: theme
 core_version_requirement: ^9 || ^10
 base theme: "localgov_microsites_base"
