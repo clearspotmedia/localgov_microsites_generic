@@ -1,4 +1,4 @@
-name: "Localgov Microsites Generic"
+name: "Localgov Microsites Generic V1.0.1"
 description: "V1.0.1 A sub theme that prettifies your LocalGov Microsite, while maintaining full design control in the Drupal design settings."
 type: theme
 core_version_requirement: ^9 || ^10

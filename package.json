@@ -1,6 +1,6 @@
 {
   "name": "localgov_microsites_generic",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "NPM scripts for the localgov_microsites_generic theme.",
   "main": "index.js",
   "scripts": {
