@@ -25,7 +25,7 @@ body {
   --banner-content-width: var(--width-container);
   --menu-item-toggle-icon-rotation: 0;
   --menu-sub-menu-font-size: 1rem;
-  --featured-teaser-link-weight: 400;
+  --featured-teaser-link-weight: 700;
   --menu-item-padding: 0;
   --btn-start-external-link-icon-color: var(--color-white);
   --btn-start-external-link-icon-hover-color: var(--color-teal);

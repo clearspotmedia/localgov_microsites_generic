@@ -79,8 +79,8 @@ footer ul {
 }
 
 /*Purple links on grey bg*/
-.lgd-page-section--bg-colour-3 a {
-  color: var(--color-accent);
+.lgd-page-section--bg-colour-3 .link:not(.link--button-style) a {
+  color: var(--button-bg-color);
 }
 
 .lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime {
@@ -133,27 +133,12 @@ aside.lgd-row__one-third {
   margin-bottom: var(--spacing);
 }
 
-.link--button-style {
-  display: flex;
-  width: 100%;
-}
-.link--button-style .link-wrapper {
-  display: inline-block;
-  width: auto;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  font-family: var(--text-input-font-family);
-  font-size: var(--font-size-medium);
+/*Link and button*/
+.link .link-wrapper .link-content a {
   font-weight: 700;
 }
-.link--button-style .link-wrapper .link-content a {
-  display: inline-block;
-  padding: 15px;
-}
-.link--button-style .link-wrapper .link-icon {
-  display: none;
-}
+
+
 
 @media screen and (width >= 768px) {
   .view-display-id-latest_news .view-content {
