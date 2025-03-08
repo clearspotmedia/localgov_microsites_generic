@@ -1,4 +1,7 @@
-/*Main full width menu*/
+/*Main menu with responsive support*/
+/* the .js identifier applies styling to elements in both desktop and mobile*/
+/* .lgd-region--main-menu can bu used to target desktop only*/
+/* .off-canvas can bu used to target mobile only*/
 
 /*Wrapper for main menu*/
 .lgd-region--main-menu {
@@ -19,114 +22,114 @@
     padding-left: 0;
 }
 
-/*Main menu link*/
-.region-microsites-header .menu li a {
+/*Main menu links*/
+.js .menu li a {
     display: inline-block;
     padding: 8px;
     text-decoration: none;
     box-shadow: none;
 }
 
-/*Main menu link hover*/
-.region-microsites-header .menu li a:hover {
+/*Main menu links hover*/
+.js .menu li a:hover {
     color: var(--header-link-color);
     text-decoration: underline;
 }
 
-/*Main menu link focus*/
-.region-microsites-header .menu li a:focus,
-.region-microsites-header .menu li:focus a {
+/*Main menu links focus*/
+.js .menu li a:focus,
+.js .menu li:focus a {
     background-color: var(--color-focus);
     color: var(--color-black);
     text-decoration: none;
 }
 
-/*Main menu link focus toggle icon inside*/
-.region-microsites-header .menu li a:focus + .menu__sub-menu-toggle:after {
-    color: var(--color-black);
+/* Sub menu wrapper hidden by default all screen sizes*/
+.js .menu li .menu {
+    display: none;
 }
 
-/*Main menu active tab*/
-.menu-item--active-trail,
-.menu-item--active-trail .menu {
+/*Child page ul links wrapper as flyout on Desktop */
+.lgd-region--main-menu .menu li .menu {
+    position: absolute;
+    z-index: 999;
+    min-width: var(--menu-sub-menu-min-width);
+    font-size: var(--menu-sub-menu-font-size);
+    box-shadow:
+        0px 3px 4px 0px rgba(0, 0, 0, 0.2),
+        0 4px var(--header-background-color);
+}
+
+/*Child page links in flyout and sub mobile menu*/
+.js .menu li .menu li a {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*Child page links hover in flyout and sub mobile menu*/
+.js .menu li .menu li a:hover {
+    text-decoration: underline;
+}
+
+/*Main menu active tab background*/
+.js .menu-item--active-trail,
+.js .menu-item--active-trail .menu {
     background-color: var(--header-link-color);
 }
 
-/*Main menu active tab link and toggle colour*/
-.menu-item--active-trail a,
-.menu-item--active-trail .menu__sub-menu-toggle:after {
+/*Main menu active tab link colour*/
+.js .menu-item--active-trail a {
     color: var(--header-background-color);
 }
 
-.region-microsites-header .menu .menu-item--active-trail a:hover {
+/*Main menu active tab link hover */
+.js .menu .menu-item--active-trail:hover a {
     color: var(--header-background-color);
 }
 
-/*Main menu - Parent of sub page*/
-.menu-item--level-0.menu-item--expanded {
-    position: relative;
-    width: auto;
-    z-index: 1;
+/*Main menu active tab link focus */
+.js .menu .menu-item--active-trail a:focus {
+    color: var(--color-black);
+    text-decoration: none;
 }
 
-/*Main menu button element placed inside the parent li, to trigger the sub-menu*/
-.region-microsites-header .menu__sub-menu-toggle {
-    align-content: center;
-    height: 100%;
+/*Hide origial toggle span - causes gap*/
+.js .menu__sub-menu-toggle-icon {
+    display: none;
+}
+
+/*Wrapper for toggle button for the sub-menu*/
+.js .menu__sub-menu-toggle {
+    display: inline;
     background: none;
-    top: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 0;
-    right: 5px;
-    width: var(--menu-sub-menu-toggle-width);
     padding: 0;
-    font-size: var(--menu-main-font-size);
-    font-weight: var(--menu-main-font-weight);
-    outline: none;
-    box-shadow: none;
+    margin: 0 8px 0 0;
+    height: 100%;
+    border: 0;
+    width: var(--menu-sub-menu-toggle-width);
+    justify-content: center;
 }
 
-.region-microsites-header .menu__sub-menu-toggle:hover {
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/* Main menu, sub menu toggle button chevron */
+/*Toggle button for the sub-menu*/
 .js .menu__sub-menu-toggle:after {
     color: var(--header-link-color);
     content: var(--chevron-down);
     pointer-events: none;
     font-family: var(--font-fa-pro);
-    font-weight: 900;
     font-size: 1rem;
     background: none;
 }
 
-/*Main menu, sub menu toggle button and links in active trail*/
-.js .off-canvas .menu .menu-item--active-trail .menu-item--level-1 a,
-.js .off-canvas .menu .menu-item--active-trail .menu-item--level-1 a:hover,
-.js .menu-item--active-trail .menu__sub-menu-toggle:after {
+/*Toggle button in active trail*/
+.js .menu .menu-item--active-trail .menu__sub-menu-toggle:after {
     color: var(--header-background-color);
 }
 
-/*Main menu, link colour*/
-.off-canvas a {
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/*Main menu, sub menu toggle icon rotation*/
-.js .menu__sub-menu-toggle[aria-expanded="true"]:after {
-    content: var(--chevron-up);
-    font-family: var(--font-fa-pro);
-    font-weight: 900;
-}
-
-/*Main menu, sub menu toggle icon focus style*/
-.region-microsites-header .menu__sub-menu-toggle:focus:after,
-.off-canvas .menu__sub-menu-toggle:focus:after,
-.off-canvas .menu__sub-menu-toggle:focus-visible:after {
+/*Toggle button focus style*/
+.js .menu__sub-menu-toggle:focus,
+.js .menu__sub-menu-toggle:focus:after,
+.js .menu__sub-menu-toggle:focus:after,
+.js .menu__sub-menu-toggle:focus-visible:after {
     background-color: var(--color-focus);
     color: var(--color-black);
     border: 0;
@@ -134,44 +137,141 @@
     box-shadow: none;
 }
 
-/* Main menu expanded items (they have sub pages)*/
-.region-microsites-header .menu li.menu-item--expanded a {
-    padding-right: 30px;
+/*Toggle button rotation when expanded*/
+.js .menu__sub-menu-toggle[aria-expanded="true"]:after {
+    content: var(--chevron-up);
+    font-family: var(--font-fa-pro);
 }
 
-/* Main menu expanded items link hover */
-.region-microsites-header .menu li.menu-item--expanded a:hover {
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/* Main menu expanded items focus (they have sub pages)*/
-.region-microsites-header .menu li.menu-item--expanded a:focus {
-    color: var(--color-black);
-}
-
-/* Main menu link when both active and expanded*/
-.region-microsites-header .menu .menu-item--expanded.menu-item--active-trail a {
-    color: var(--header-background-color);
-}
-
-/* Main menu link when both active and expanded*/
-.region-microsites-header .menu .menu-item--expanded.menu-item--active-trail a:hover {
-    color: var(--header-background-color);
-}
-
-/*Main menu, sub menu toggle icon transition time*/
-.region-microsites-header .menu__sub-menu-toggle-icon {
-    display: inline-block;
-}
-
-/*Expanded mobile menu*/
-/*Using off-canvas as a class prefix will apply these styles to the mobile menu only, without the need for a breakpoint*/
+/*Expanded mobile menu below here*/
+/*Using .off-canvas as a class prefix will apply these styles to the mobile menu only, without the need for a breakpoint*/
 /*Wrapper for mobile menu, hide on desktop*/
+
+/*Mobile menu set link colour to same as desktop*/
+.off-canvas a {
+    color: var(--header-link-color);
+}
 
 /*Remove unwanted padding from mobile menu*/
 .off-canvas .menu {
     margin: 0px 0 25px 0;
     padding: 0;
+}
+
+/*Sub menu in the flow not absolute*/
+.off-canvas .menu .menu {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/*Dividing lines between main meny items*/
+.off-canvas .menu .menu-item {
+    border-bottom: 1px solid var(--header-link-color);
+}
+
+/*Make elements inside off canvas full width*/
+.off-canvas .lgd-region__inner--off-canvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--spacing) 0;
+}
+
+/*Hide additional close button*/
+.off-canvas__close {
+    display: none;
+}
+
+/* Flex layout search in pre header and off canvas */
+.block-localgov-search form {
+    padding: 0;
+    display: flex;
+}
+
+/* Remove margin under search in pre header and off canvas and off canvas */
+.block-localgov-search form .form-item {
+    margin-bottom: 0;
+}
+
+/* Hide label of search in pre header and off canvas (SHOULD BE MADE sr-only) */
+.microsite-header__pre-header .lgd-region--search form label,
+.block-localgov-search label {
+    display: none;
+}
+
+/* Style input search in pre header and off canvas */
+.block-localgov-search input.form-text {
+    height: 45px;
+    color: var(--color-black);
+    font-size: 1.125rem;
+    border: 0;
+}
+
+/* Max width input search in pre header only */
+@media screen and (min-width: 768px) {
+    .microsite-header__pre-header .block-localgov-search input.form-text {
+        max-width: 250px;
+    }
+}
+
+/* Prepare wrapper for search icon in search in pre header and off canvas */
+.block-localgov-search .form-wrapper {
+    position: relative;
+}
+
+/* Search icon in pre header and off canvas */
+.block-localgov-search .form-wrapper:after {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    content: var(--search);
+    pointer-events: none;
+    color: var(--color-white);
+    font-family: var(--font-fa-pro);
+    font-size: 1.175rem;
+    font-weight: 400;
+}
+
+/* Search submit button in pre header and off canvas */
+.block-localgov-search .form-wrapper input.button {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    color: transparent;
+    outline: 0;
+    border: none;
+    background: var(--color-black);
+}
+
+/* Search submit button hover triggered by it's wrapper, in pre header and off canvas */
+.block-localgov-search .form-wrapper:hover:not(:focus) input {
+    background: var(--color-white);
+}
+
+/* Search submit button hover in pre header and off canvas */
+.block-localgov-search .form-wrapper input.button:not(:focus):hover {
+    background: var(--color-black);
+    color: transparent;
+    border: 3px solid var(--color-white);
+}
+
+/* Search submit button icon hover triggered by it's wrapper, in pre header and off canvas */
+.block-localgov-search .form-wrapper:hover:not(:focus)::after {
+    color: var(--color-white);
+}
+
+/* Search submit button focus in pre header and off canvas */
+.block-localgov-search input.button:focus,
+.block-localgov-search input.button:active,
+.block-localgov-search input.button:focus:hover {
+    background: var(--color-black);
+    outline: 3px solid var(--color-focus);
+}
+
+/* Search placeholder in pre header and off canvas */
+.block-localgov-search input::placeholder {
+    color: var(--placeholder);
 }
 
 /*Remove unwanted padding from search form*/
@@ -182,207 +282,4 @@
 /*Search full width*/
 .off-canvas .js-form-item {
     flex-basis: 100%;
-}
-
-/*Search full width*/
-.off-canvas input.form-text {
-    width: 100%;
-}
-
-/*Prevent mozilla changing placeholder opacity*/
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-    opacity: 1;
-}
-
-/*Make sub menu in the flow not absolute*/
-.off-canvas .menu .menu {
-    position: relative;
-    margin: 10px 0 0 0;
-    background: none;
-    border: none;
-    width: 100%;
-}
-
-/*Make elements inside off canvas full width*/
-.off-canvas .lgd-region__inner--off-canvas {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/*Hide additional close button*/
-.off-canvas__close {
-    display: none;
-}
-
-/*Mobile menu items*/
-.off-canvas .menu-item {
-    pointer-events: initial;
-    position: relative;
-    width: auto;
-    padding: 8px 0px;
-    text-decoration: none;
-    border-bottom: 1px solid var(--menu-sub-menu-link-colour);
-}
-
-/*Main menu active tab mobile*/
-.off-canvas .menu-item--active-trail {
-    /*background-color: var(--color-white);*/
-}
-
-/*Main menu active tab link mobile*/
-.off-canvas .menu-item--active-trail a {
-    padding: 0 8px;
-    color: var(--header-background-color);
-}
-
-/*Main menu active tab link mobile*/
-.off-canvas .menu-item.menu-item--active-trail a:hover {
-    color: var(--header-background-color);
-    text-decoration: underline;
-}
-
-/*Mobile menu items*/
-.off-canvas .menu-item a {
-    text-decoration: none;
-}
-
-/*Mobile menu item hover*/
-.off-canvas .menu-item a:hover {
-    text-decoration: underline;
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/*Mobile menu item focus*/
-.off-canvas .menu-item a:focus,
-.off-canvas .menu-item a:focus:hover {
-    color: var(--color-black);
-    text-decoration: none;
-}
-
-/*Mobile menu has children*/
-.off-canvas .menu-item.menu-item--expanded {
-    padding: 8px 0;
-    text-decoration: none;
-}
-
-/*Mobile menu has children link*/
-.off-canvas .menu-item.menu-item--expanded a {
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/*Mobile menu has children and is active trail link*/
-.off-canvas .menu-item.menu-item--expanded.menu-item--active-trail a {
-    color: var(--header-background-color);
-}
-
-/*Mobile menu expanded item focus*/
-.off-canvas .menu-item.menu-item--expanded a:focus,
-.off-canvas .menu-item.menu-item--expanded a:focus:hover {
-    color: var(--color-black);
-    text-decoration: none;
-}
-
-/*Mobile menu reposition menu toggle icon*/
-.off-canvas .menu__sub-menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 0;
-    background: none;
-    padding: 0;
-    outline: none;
-}
-
-/*Mobile menu toggle hover state*/
-.off-canvas .menu__sub-menu-toggle:hover {
-    box-shadow: none;
-    color: var(--menu-sub-menu-link-colour);
-}
-
-.region-microsites-header .menu__sub-menu-toggle:focus:hover::after {
-    color: var(--color-black);
-}
-
-/*Sub menu items mobile*/
-.js .off-canvas .menu .menu-item--level-1 {
-    border: none;
-}
-
-/*Sub menu items mobile*/
-.js .off-canvas .menu .menu-item--level-1 a {
-    color: var(--menu-sub-menu-link-colour);
-    text-decoration: none;
-    width: 100%;
-    font-weight: 400;
-    font-size: var(--font-size);
-}
-
-/*Sub menu items mobile*/
-.js .off-canvas .menu .menu-item--level-1 a:hover {
-    color: var(--menu-sub-menu-link-colour);
-    text-decoration: underline;
-}
-
-/*This is for the fly out menu*/
-
-/* Sub menu wrapper hidden by default all screen sizes*/
-.js .menu .menu {
-    display: none;
-}
-
-/* Prepare the parent menu item in main menu for sub menu - Desktop */
-@media screen and (min-width: 48rem) {
-    .js .menu--menu-level-0 > .menu-item {
-        position: relative;
-        z-index: 1;
-    }
-}
-
-/* Sub menu wrapper */
-.js .menu .menu {
-    position: absolute;
-    left: 0;
-    min-width: var(--menu-sub-menu-min-width);
-    font-size: var(--menu-sub-menu-font-size);
-    /*background-color: var(--menu-sub-menu-background-colour);*/
-    box-shadow:
-        0px 3px 4px 0px rgba(0, 0, 0, 0.2),
-        0 4px var(--header-background-color);
-}
-
-/*Remove margin and box shadow from sub menu (mobile ony .off-canvas prefix)*/
-.off-canvas .menu .menu {
-    margin: 0;
-    box-shadow: none;
-}
-
-/*parent links*/
-.off-canvas .menu-item.menu-item--expanded a {
-    color: var(--menu-sub-menu-link-colour);
-}
-
-/* Hide label of search in mobile header (SHOULD BE MADE sr-only) */
-.off-canvas .block-localgov-search label {
-    display: none;
-}
-
-/* Sub menu link */
-.js .menu .menu .menu-item--level-1 a {
-    text-decoration: none;
-    font-size: var(--menu-sub-menu-font-size);
-    width: 100%;
-}
-
-/* Sub menu link hover*/
-.js .menu .menu .menu-item--level-1 a:hover {
-    text-decoration: underline;
-}
-
-/* Sub menu link focus*/
-.js .menu .menu .menu-item--level-1 a:focus,
-.js .menu .menu .menu-item--level-1 a:focus:hover {
-    text-decoration: none;
-    color: var(--color-black);
 }

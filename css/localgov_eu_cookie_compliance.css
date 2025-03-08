@@ -1,3 +1,5 @@
+h1 {color: #7b5;}
+
 #sliding-popup {
     transition: none;
 }
@@ -58,7 +60,7 @@
     align-self: flex-start;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
     #sliding-popup .popup-content .row {
         flex-direction: row;
         align-items: center;
@@ -88,7 +90,7 @@
     display: none !important;
 }
 
-@media (width >= 992px) {
+@media (width > 992px) {
     .cookies-notice .d-lg-block {
         display: block !important;
     }

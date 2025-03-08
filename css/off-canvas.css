@@ -13,7 +13,8 @@
     border-color: var(--menu-sub-menu-link-colour);
 }
 /*Mobile menu toggle hover*/
-.microsite-header__off-canvas-toggle:hover {
+.microsite-header__off-canvas-toggle:hover,
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover {
     background-color: var(--menu-sub-menu-link-colour);
     color: var(--header-background-color);
     border-color: var(--menu-sub-menu-link-colour);
@@ -21,22 +22,19 @@
 }
 
 /*Mobile menu trigger in active state*/
-.microsite-header__off-canvas-toggle[aria-expanded="true"],
-.microsite-header__off-canvas-toggle[aria-expanded="true"]:focus {
-    background-color: var(--header-background-color);
-    color: var(--color-focus);
-    border-color: var(--color-focus);
+.microsite-header__off-canvas-toggle[aria-expanded="true"] {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+    border: 0;
+    box-shadow: none;
 }
 
-/*Mobile menu trigger active state hover*/
-.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover {
-    color: var(--menu-sub-menu-link-colour);
-    border-color: var(--menu-sub-menu-link-colour);
-}
-
-/*Mobile menu trigger active state hover*/
-.microsite-header__off-canvas-toggle[aria-expanded="true"]:hover:before {
-    color: var(--menu-sub-menu-link-colour);
+/*Mobile menu trigger in focus state*/
+.microsite-header__off-canvas-toggle[aria-expanded="true"]:focus,
+.microsite-header__off-canvas-toggle:focus {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+    border: 0;
 }
 
 /*Wrapper for expanded mobile menu, position under header*/

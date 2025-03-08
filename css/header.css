@@ -93,106 +93,13 @@
 
 /* Site logo hover and focus */
 .microsite-header__logo a:hover {
-  box-shadow: 0 0 0 0.125rem #fb0 !important;
+  box-shadow: 0 0 0 0.125rem var(--color-focus) !important;
   display: block;
   background: none;
 }
 
 .microsite-header__logo a:focus {
-  box-shadow: 0 0 0 0.125rem #fff !important;
+  box-shadow: 0 0 0 0.125rem var(--color-white) !important;
   display: block;
   background: none;
-}
-
-
-/* Flex layout search in pre header */
-.microsite-header__pre-header .lgd-region--search form {
-  padding: 0 var(--spacing) 0 0;
-  display: flex;
-}
-
-/* Remove margin under search in pre header */
-.microsite-header__pre-header .lgd-region--search form .form-item {
-  margin-bottom: 0;
-}
-
-/* Hide label of search in pre header (SHOULD BE MADE sr-only) */
-.microsite-header__pre-header .lgd-region--search label {
-  display: none;
-}
-
-/* Style input search in pre header */
-.microsite-header__pre-header .lgd-region--search input.form-text {
-  width: auto;
-  height: 45px;
-  color: var(--color-black);
-  font-size: 1.125rem;
-  outline: none;
-  border: 0;
-}
-
-/* Max width input search in pre header on desktop */
-@media screen and (min-width: 768px) {
-  .microsite-header__pre-header .lgd-region--search input.form-text {
-    max-width: 250px;
-  }
-}
-
-/* Prepare wrapper for search icon in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper {
-  position: relative;
-}
-
-/* Search icon in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper:after {
-  position: absolute;
-  top: 9px;
-  left: 12px;
-  content: var(--search);
-  pointer-events: none;
-  color: var(--color-white);
-  font-family: var(--font-fa-pro);
-  font-size: 1.175rem;
-  font-weight: 400;
-}
-
-/* Search submit button in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper input.button {
-  width: 45px;
-  height: 45px;
-  padding: 0;
-  color: transparent;
-  outline: 0;
-  border: none;
-  background: var(--color-black);
-}
-
-/* Search submit button hover triggered by it's wrapper, in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper:hover:not(:focus) input {
-  background: var(--color-white);
-}
-
-/* Search submit button hover in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper input.button:not(:focus):hover {
-  background: var(--color-black);
-  color: transparent;
-  border: 3px solid var(--color-white);
-}
-
-/* Search submit button icon hover triggered by it's wrapper, in pre header */
-.microsite-header__pre-header .lgd-region--search .form-wrapper:hover:not(:focus)::after {
-  color: var(--color-white);
-}
-
-/* Search submit button focus in pre header */
-.microsite-header__pre-header .lgd-region--search input.button:focus,
-.microsite-header__pre-header .lgd-region--search input.button:active,
-.microsite-header__pre-header .lgd-region--search input.button:focus:hover {
-  background: var(--color-black);
-  outline: 3px solid var(--color-focus);
-}
-
-/* Search placeholder in pre header */
-.microsite-header__pre-header .lgd-region--search input::placeholder {
-  color: var(--placeholder);
 }
