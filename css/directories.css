@@ -64,3 +64,8 @@
   font-size: var(--font-size-h2);
   padding: var(--spacing) 0;
 }
+
+.full .field--name-localgov-directory-standfirst {
+  max-width: var(--width-restricted-width-section);
+  margin-bottom: var(--spacing-larger);
+}

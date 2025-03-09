@@ -103,28 +103,10 @@ footer ul {
   padding: 0 15px;
 }
 
-.eu-cookie-compliance-banner {
-  margin: 0 auto;
-  padding-right: 0;
-  position: relative;
-  width: 100%;
-  max-width: 1140px;
-}
-
-@media (width >= 992px) {
-  .eu-cookie-compliance-banner {
-    padding-right: 300px;
-  }
-}
-
 aside.lgd-row__one-third {
   padding-top: 1.5rem;
 }
 
-.full .field--name-localgov-directory-standfirst {
-  max-width: var(--width-restricted-width-section);
-  margin-bottom: var(--spacing-larger);
-}
 
 /*Page builder blocks overrides*/
 
@@ -140,41 +122,13 @@ aside.lgd-row__one-third {
 
 
 
-@media screen and (width >= 768px) {
-  .view-display-id-latest_news .view-content {
-    display: flex;
-    gap: 0 var(--spacing-larger);
-  }
-}
 
-@media screen and (width >= 768px) {
-  .view-display-id-latest_news .view-content .views-row {
-    flex: 1 1 calc(calc(100% / 3) - var(--spacing-larger) * 3);
-    border-bottom: 0;
-  }
-}
-.view-display-id-latest_news .view-content .views-row .lgd-teaser {
-  display: inline-block;
-}
-.view-display-id-latest_news .view-content .views-row .lgd-teaser a {
-  text-decoration: none;
-  color: var(--black);
-}
-.view-display-id-latest_news .view-content .views-row .lgd-teaser .field--name-localgov-news-date {
-  color: var(--color-dark-grey);
-  font-weight: 700;
-}
-.view-display-id-latest_news .view-content .views-row .lgd-teaser .lgd-teaser__image {
-  width: 100%;
-}
-.view-display-id-latest_news .lgd-teaser__content--localgov-news-article {
-  margin-left: 0;
-  padding-top: 20px;
-}
 .full__layout-section .field--name-localgov-paragraph-content > .field__item {
   padding: 45px 0;
 }
 
+
+/*Text paragraph type*/
 .paragraph--type--localgov-page-section .paragraph--type--localgov-text .field--name-localgov-text ul {
   margin: 0;
   padding: 0 0 0 15px;

@@ -1,5 +1,18 @@
-h1 {color: #7b5;}
+.eu-cookie-compliance-banner {
+    margin: 0 auto;
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+  }
+  
+  @media (width >= 992px) {
+    .eu-cookie-compliance-banner {
+      padding-right: 300px;
+    }
+  }
 
+  
 #sliding-popup {
     transition: none;
 }
