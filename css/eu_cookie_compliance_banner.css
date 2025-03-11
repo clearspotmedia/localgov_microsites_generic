@@ -4,21 +4,19 @@
     position: relative;
     width: 100%;
     max-width: 1140px;
-  }
-  
-  @media (width >= 992px) {
-    .eu-cookie-compliance-banner {
-      padding-right: 300px;
-    }
-  }
+}
 
-  
-#sliding-popup {
-    transition: none;
+@media (width >= 992px) {
+    .eu-cookie-compliance-banner {
+        padding-right: 300px;
+    }
 }
 
 #sliding-popup.sliding-popup-top {
     position: relative;
+}
+
+#sliding-popup {
     background: var(--color-grey);
     text-align: left;
     transition: none;

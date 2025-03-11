@@ -1,0 +1,9 @@
+/*Put overrides for cookie settings page here*/
+main h1{
+    color: aquamarine;
+}
+
+.lgd-region .eu-cookie-compliance-save-preferences-button.spinning::before {
+    border-inline-end: 3px solid var(--button-text-color-hover);
+    box-shadow: 0 0 2px 0 var(--button-text-color-hover);
+  }

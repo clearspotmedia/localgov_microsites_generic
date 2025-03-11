@@ -22,10 +22,15 @@ alert-banner:
     theme:
       css/alert-banner.css: {}
 
+eu_cookie_compliance_bare:
+  css:
+    theme:
+      css/eu_cookie_compliance_banner.css: {}
+
 localgov_eu_cookie_compliance:
   css:
     theme:
-      css/localgov_eu_cookie_compliance.css: {}
+      css/eu_cookie_compliance_page.css: {}
 
 header:
   css:

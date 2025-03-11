@@ -15,6 +15,8 @@ libraries-extend:
     - localgov_microsites_generic/base
   localgov_base/alert-banner:
     - localgov_microsites_generic/alert-banner
+  eu_cookie_compliance/eu_cookie_compliance_bare:
+    - localgov_microsites_generic/eu_cookie_compliance_bare
   localgov_base/localgov_eu_cookie_compliance:
     - localgov_microsites_generic/localgov_eu_cookie_compliance
   localgov_microsites_base/header:
