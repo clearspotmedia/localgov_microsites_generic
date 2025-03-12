@@ -31,8 +31,6 @@
 .microsite-header__name-slogan {
   min-height: 45px;
   height: fit-content;
-  border-left: 1px solid var(--header-text-color);
-  padding-left: var(--spacing-padding-horizontal);
   max-width: 100%;
   display: flex;
   line-height: initial;
