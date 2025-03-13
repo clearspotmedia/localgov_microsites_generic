@@ -81,10 +81,6 @@
 	{{ page.banner }}
 {% endif %}
 
-{% if has_breadcrumb and not node %}
-	{{ page.breadcrumb }}
-{% endif %}
-
 {% if has_messages %}
 	{{ page.messages }}
 {% endif %}
@@ -93,12 +89,35 @@
 	class="main" id="main-content">
 	{# The "skip to content" link jumps to here. #}
 
-	{% if has_page_title and not node %}
+	{% set content_type = node.bundle %}
+
+	{% if content_type == 'localgov_guides_overview' or content_type == 'localgov_guides_page' %}
+		{{ page.breadcrumb }}
 		{{ page.page_title }}
 	{% endif %}
 
-	{% set content_type = node.bundle %}
-	{% if content_type == 'localgov_guides_overview' or content_type == 'localgov_guides_page' %}
+	{% if content_type == 'localgov_services_landing' or content_type == 'localgov_services_page' %}
+		{{ page.breadcrumb }}
+		{{ page.page_title }}
+	{% endif %}
+
+	{% if content_type == 'localgov_step_by_step_overview' or content_type == 'localgov_step_by_step_page' %}
+		{{ page.breadcrumb }}
+		{{ page.page_title }}
+	{% endif %}
+
+	{% if content_type == 'localgov_directory' or content_type == 'localgov_directory_page'%}
+		{{ page.breadcrumb }}
+		{{ page.page_title }}
+	{% endif %}
+
+	{% if content_type == 'localgov_newsroom' or content_type == 'localgov_newsroom_article'%}
+		{{ page.breadcrumb }}
+		{{ page.page_title }}
+	{% endif %}
+
+	{% if content_type == 'localgov_webform'%}
+		{{ page.breadcrumb }}
 		{{ page.page_title }}
 	{% endif %}
 
@@ -152,13 +171,13 @@
 		{# When we have no sidebars #}
 	{% else %}
 		{# 
-		      If there are no sidebars, the content region take up 100% of the space, but:
-		      1.  If we are on a node page, we do not constrain the content (this will be handled 
-		          by the node templates, so some parts of the template (hero, etc) can be the full
-		          width of the screen).
-		      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
-		          pages, login page, etc are not bleeding to the edge of the screen.
-		    #}
+								      If there are no sidebars, the content region take up 100% of the space, but:
+								      1.  If we are on a node page, we do not constrain the content (this will be handled 
+								          by the node templates, so some parts of the template (hero, etc) can be the full
+								          width of the screen).
+								      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
+								          pages, login page, etc are not bleeding to the edge of the screen.
+								    #}
 		{% if not node %}
 			<div class="lgd-container padding-horizontal">
 				{{ page.content }}
