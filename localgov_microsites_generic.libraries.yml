@@ -5,7 +5,7 @@ fontawesome:
 variables:
   css:
     base:
-      css/variables.css: {}
+      css/variables.css: { weight: 200 }
 
 grid:
   css:
@@ -35,7 +35,12 @@ localgov_eu_cookie_compliance:
 header:
   css:
     theme:
-      css/header.css: {}
+      css/header.css: { weight: 200 }
+
+sitewide-search:
+  css:
+    theme:
+      css/sitewide-search.css: { weight: 200 }
 
 banner:
   css:
@@ -87,7 +92,3 @@ events:
     theme:
       css/events.css: {}
 
-sitewide-search:
-  css:
-    theme:
-      css/sitewide-search.css: {}

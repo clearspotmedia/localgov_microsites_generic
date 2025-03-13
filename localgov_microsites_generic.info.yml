@@ -59,6 +59,7 @@ regions:
   banner: "Banner"
   utility_menu: "Utility menu"
   page_title: "Page title"
+  breadcrumb: "Breadcrumb"
   messages: "Messages"
   content_top: "Content top"
   content: "Content"

@@ -61,13 +61,11 @@
   {{ page.tabs }}
 {% endif %}
 
-<div class="off-canvas" id="off-canvas" data-expanded="false">
-  {{ page.off_canvas }}
-</div>
-
 {% block header %}
   <header class="microsite-header">
-    {% include "@localgov_microsites_generic/layout/includes/microsites-header.html.twig" %}
+      <div class="microsite-header-inner">
+        {% include "@localgov_microsites_generic/layout/includes/microsites-header.html.twig" %}
+      </div>
   </header>
 {% endblock %}
 
@@ -75,11 +73,21 @@
   {{ page.header }}
 {% endif %}
 
+<div class="off-canvas" id="off-canvas" data-expanded="false">
+  {{ page.off_canvas }}
+</div>
+
+{% if has_banner %}
+  {{ page.banner }}
+{% endif %}
+
 {% if has_breadcrumb and not node %}
   {{ page.breadcrumb }}
 {% endif %}
 
-{{ page.messages }}
+{% if has_messages %}
+  {{ page.messages }}
+{% endif %}
 
 <main class="main" id="main-content"> {# The "skip to content" link jumps to here. #}
 
@@ -132,12 +140,12 @@
         {% endif %}
       </div>
     </div>
-
+  
   {# When we have no sidebars #}
   {% else %}
-    {#
+    {# 
       If there are no sidebars, the content region take up 100% of the space, but:
-      1.  If we are on a node page, we do not constrain the content (this will be handled
+      1.  If we are on a node page, we do not constrain the content (this will be handled 
           by the node templates, so some parts of the template (hero, etc) can be the full
           width of the screen).
       2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
