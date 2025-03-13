@@ -58,119 +58,127 @@
 {{ attach_library('localgov_microsites_base/footer') }}
 
 {% if has_tabs %}
-  {{ page.tabs }}
+	{{ page.tabs }}
 {% endif %}
 
 {% block header %}
-  <header class="microsite-header">
-      <div class="microsite-header-inner">
-        {% include "@localgov_microsites_generic/layout/includes/microsites-header.html.twig" %}
-      </div>
-  </header>
+	<header class="microsite-header">
+		<div class="microsite-header-inner">
+			{% include "@localgov_microsites_generic/layout/includes/microsites-header.html.twig" %}
+		</div>
+	</header>
 {% endblock %}
 
 {% if has_header %}
-  {{ page.header }}
+	{{ page.header }}
 {% endif %}
 
 <div class="off-canvas" id="off-canvas" data-expanded="false">
-  {{ page.off_canvas }}
+	{{ page.off_canvas }}
 </div>
 
 {% if has_banner %}
-  {{ page.banner }}
+	{{ page.banner }}
 {% endif %}
 
 {% if has_breadcrumb and not node %}
-  {{ page.breadcrumb }}
+	{{ page.breadcrumb }}
 {% endif %}
 
 {% if has_messages %}
-  {{ page.messages }}
+	{{ page.messages }}
 {% endif %}
 
-<main class="main" id="main-content"> {# The "skip to content" link jumps to here. #}
+<main
+	class="main" id="main-content">
+	{# The "skip to content" link jumps to here. #}
 
-  {% if has_page_title and not node %}
-    {{ page.page_title }}
-  {% endif %}
+	{% if has_page_title and not node %}
+		{{ page.page_title }}
+	{% endif %}
 
-  {% if has_content_top %}
-    {{ page.content_top }}
-  {% endif %}
+	{% set content_type = node.bundle %}
+	{% if content_type == 'localgov_guides_overview' or content_type == 'localgov_guides_page' %}
+		{{ page.page_title }}
+	{% endif %}
 
-  {# Begin Sidebars #}
-  {% if has_sidebars %}
-    <div class="lgd-container">
-      <div class="lgd-row">
-        {% if has_sidebar_first and not has_sidebar_second %}
-          <aside class="lgd-row__one-third sidebar sidebar--first">
-            {{ page.sidebar_first }}
-          </aside>
-          <div class="lgd-row__two-thirds">
-            <div class="padding-horizontal">
-              {{ page.content }}
-            </div>
-          </div>
-        {% endif %}
 
-        {% if has_sidebar_second and not has_sidebar_first %}
-          <div class="lgd-row__two-thirds">
-            <div class="padding-horizontal">
-              {{ page.content }}
-            </div>
-          </div>
-          <aside class="lgd-row__one-third sidebar sidebar--second">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endif %}
+	{% if has_content_top %}
+		{{ page.content_top }}
+	{% endif %}
 
-        {% if has_sidebar_first and has_sidebar_second %}
-          <aside class="lgd-row__one-quarter sidebar sidebar--first">
-            {{ page.sidebar_first }}
-          </aside>
-          <div class="lgd-row__one-half">
-            <div class="padding-horizontal">
-              {{ page.content }}
-            </div>
-          </div>
-          <aside class="lgd-row__one-quarter sidebar sidebar--second">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endif %}
-      </div>
-    </div>
-  
-  {# When we have no sidebars #}
-  {% else %}
-    {# 
-      If there are no sidebars, the content region take up 100% of the space, but:
-      1.  If we are on a node page, we do not constrain the content (this will be handled 
-          by the node templates, so some parts of the template (hero, etc) can be the full
-          width of the screen).
-      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
-          pages, login page, etc are not bleeding to the edge of the screen.
-    #}
-    {% if not node %}
-      <div class="lgd-container padding-horizontal">
-        {{ page.content }}
-      </div>
-      {% else %}
-        {{ page.content }}
-    {% endif %}
-  {% endif %}
-  {# End Sidebars #}
+	{# Begin Sidebars #}
+	{% if has_sidebars %}
+		<div class="lgd-container">
+			<div class="lgd-row">
+				{% if has_sidebar_first and not has_sidebar_second %}
+					<aside class="lgd-row__one-third sidebar sidebar--first">
+						{{ page.sidebar_first }}
+					</aside>
+					<div class="lgd-row__two-thirds">
+						<div class="padding-horizontal">
+							{{ page.content }}
+						</div>
+					</div>
+				{% endif %}
 
-  {% if has_content_bottom %}
-    {{ page.content_bottom }}
-  {% endif %}
+				{% if has_sidebar_second and not has_sidebar_first %}
+					<div class="lgd-row__two-thirds">
+						<div class="padding-horizontal">
+							{{ page.content }}
+						</div>
+					</div>
+					<aside class="lgd-row__one-third sidebar sidebar--second">
+						{{ page.sidebar_second }}
+					</aside>
+				{% endif %}
+
+				{% if has_sidebar_first and has_sidebar_second %}
+					<aside class="lgd-row__one-quarter sidebar sidebar--first">
+						{{ page.sidebar_first }}
+					</aside>
+					<div class="lgd-row__one-half">
+						<div class="padding-horizontal">
+							{{ page.content }}
+						</div>
+					</div>
+					<aside class="lgd-row__one-quarter sidebar sidebar--second">
+						{{ page.sidebar_second }}
+					</aside>
+				{% endif %}
+			</div>
+		</div>
+
+		{# When we have no sidebars #}
+	{% else %}
+		{# 
+		      If there are no sidebars, the content region take up 100% of the space, but:
+		      1.  If we are on a node page, we do not constrain the content (this will be handled 
+		          by the node templates, so some parts of the template (hero, etc) can be the full
+		          width of the screen).
+		      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
+		          pages, login page, etc are not bleeding to the edge of the screen.
+		    #}
+		{% if not node %}
+			<div class="lgd-container padding-horizontal">
+				{{ page.content }}
+			</div>
+		{% else %}
+			{{ page.content }}
+		{% endif %}
+	{% endif %}
+	{# End Sidebars #}
+
+	{% if has_content_bottom %}
+		{{ page.content_bottom }}
+	{% endif %}
 </main>
 
 {% block footer %}
-  <footer class="microsite-footer">
-    {% include "@localgov_microsites_base/layout/includes/microsites-footer.html.twig" %}
-    {% if has_footer %}
-      {{ page.footer }}
-    {% endif %}
-  </footer>
+	<footer class="microsite-footer">
+		{% include "@localgov_microsites_base/layout/includes/microsites-footer.html.twig" %}
+		{% if has_footer %}
+			{{ page.footer }}
+		{% endif %}
+	</footer>
 {% endblock %}
