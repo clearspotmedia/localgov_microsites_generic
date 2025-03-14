@@ -73,6 +73,10 @@ main h1 {
   margin-bottom: var(--spacing);
 }
 
+.full .field--name-body {
+  padding: var(--spacing) 0;
+}
+
 footer p,
 footer ul {
   font-size: 1rem;
@@ -106,7 +110,6 @@ footer ul {
 aside.lgd-row__one-third {
   padding-top: 1.5rem;
 }
-
 
 /*Page builder blocks overrides*/
 
