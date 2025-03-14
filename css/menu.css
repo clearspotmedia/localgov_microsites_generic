@@ -93,8 +93,7 @@
 .js .menu .menu-item--active-trail:hover a {
     color: var(--header-background-color);
 }
---menu-sub-menu-background-colour
---menu-sub-menu-link-colour
+
 /*Main menu active tab link focus */
 .js .menu .menu-item--active-trail a:focus {
     color: var(--color-black);
