@@ -106,3 +106,8 @@ prev-next:
   css:
     theme:
       css/prev-next.css: {}
+
+service-cta-block:
+  css:
+    theme:
+      css/service-cta-block.css: {}

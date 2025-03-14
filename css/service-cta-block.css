@@ -1,0 +1,21 @@
+/*Service cta buttons to use microsite design setting colours*/
+.service-cta-block__link {
+    font-weight: var(--heading-font-weight);
+}
+
+.service-cta-block__link--cta-action,
+.service-cta-block__link--cta-info {
+    background-color: var(--color-accent-2);
+}
+
+.service-cta-block__link--cta-action:hover,
+.service-cta-block__link--cta-info:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.service-cta-block__link:focus .service-cta-block__link-icon svg path {
+    fill: var(--color-black);
+    text-decoration: none;
+}

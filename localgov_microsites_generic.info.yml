@@ -49,6 +49,8 @@ libraries-extend:
     - localgov_microsites_generic/guide-nav
   localgov_base/prev-next:
     - localgov_microsites_generic/prev-next
+  localgov_base/service-cta-block:
+    - localgov_microsites_generic/service-cta-block
 
 libraries-override:
   localgov_microsites_base/menu:
