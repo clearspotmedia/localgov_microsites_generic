@@ -1,0 +1,43 @@
+/*Teaser overrides for Directory*/
+
+/*Space above directory results*/
+.full--localgov-directory {
+    padding-top: var(--spacing-larger);
+}
+
+/*Improve directory layout, multiple nested padding classes, could be fixed in twig*/
+.full--localgov-directory .lgd-container.padding-horizontal {
+    padding: 0;
+}
+
+/*Improve directory layout, add horizontal padding around search to make it fit column*/
+.page-node-type-localgov-directory .lgd-region.lgd-region--sidebar-first {
+    padding-right: var(--spacing-padding-horizontal);
+    padding-left: var(--spacing-padding-horizontal);
+}
+
+/*Spacing and divider on directory listings, flex column for promo listings that inlcude images*/
+.page-node-type-localgov-directory .lgd-teaser {
+    flex-direction: column;
+    margin: var(--spacing-larger) 0;
+    padding: 0 0 var(--spacing) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/*Directory listing heading*/
+.lgd-teaser--localgov-directories-venue h3,
+.lgd-teaser--localgov-directories-page h3,
+.lgd-teaser--localgov-directory-promo-page h3 {
+    margin-bottom: var(--spacing);
+}
+
+/*Directory promo page listing fix banner*/
+.page-node-type-localgov-directory .lgd-teaser__image {
+    flex-shrink: unset;
+    width: 100%;
+}
+
+/*Directory promo page listing fix margin*/
+.page-node-type-localgov-directory .lgd-teaser__image + .lgd-teaser__content {
+    margin-left: 0;
+}

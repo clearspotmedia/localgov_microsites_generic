@@ -37,7 +37,9 @@ libraries-extend:
     - localgov_microsites_generic/news
   localgov_base/blog:
     - localgov_microsites_generic/blog
-  localgov_microsites_base/directories:
+  localgov_base/teaser:
+    - localgov_microsites_generic/teaser
+  localgov_base/directories:
     - localgov_microsites_generic/directories
   localgov_microsites_base/events:
     - localgov_microsites_generic/events

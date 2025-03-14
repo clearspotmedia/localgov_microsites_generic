@@ -1,42 +1,7 @@
-/*Directory content type*/
-
-/*Improve directory layout, multiple nested padding classes, could be fixed in twig*/
-.full--localgov-directory .lgd-container.padding-horizontal {
+.localgov-directories-venue fieldset,
+.localgov-directories-page fieldset {
   padding: 0;
-}
-
-/*Improve directory layout, add horizontal padding around search*/
-.page-node-type-localgov-directory .lgd-region.lgd-region--sidebar-first {
-  padding-right: var(--spacing-padding-horizontal);
-  padding-left: var(--spacing-padding-horizontal);
-}
-
-/*Spacing and divider on directory listings*/
-.lgd-teaser--localgov-directories-venue,
-.lgd-teaser--localgov-directories-page,
-.lgd-teaser--localgov-directory-promo-page {
-  flex-direction: column;
-  margin: var(--spacing-larger) 0;
-  padding: 0 0 var(--spacing) 0;
-  border-bottom: 1px solid #dddddd;
-}
-
-/*Directory listing heading*/
-.lgd-teaser--localgov-directories-venue h3,
-.lgd-teaser--localgov-directories-page h3,
-.lgd-teaser--localgov-directory-promo-page h3 {
-  margin-bottom: var(--spacing);
-}
-
-/*Directory promo page listing fix margin*/
-.lgd-teaser__image + .lgd-teaser__content {
-  margin-left: 0;
-}
-
-/*Directory promo page listing fix banner*/
-.lgd-teaser__image {
-  flex-shrink: unset;
-  width: 100%;
+  border: none;
 }
 
 /*Directory search heading*/

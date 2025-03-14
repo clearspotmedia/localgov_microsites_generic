@@ -87,6 +87,11 @@ directories:
     theme:
       css/directories.css: {}
 
+teaser:
+  css:
+    theme:
+      css/teaser.css: {}
+
 events:
   css:
     theme:
@@ -96,6 +101,7 @@ guide-nav:
   css:
     theme:
       css/guide-nav.css: {}
+
 prev-next:
   css:
     theme:
