@@ -120,7 +120,7 @@
     color: var(--header-link-color);
     content: var(--chevron-down);
     pointer-events: none;
-    font-family: var(--font-fa-pro);
+    font-family: var(--font-fa-free);
     font-size: 1rem;
     background: none;
 }
@@ -145,7 +145,7 @@
 /*Toggle button rotation when expanded*/
 .js .menu__sub-menu-toggle[aria-expanded="true"]:after {
     content: var(--chevron-up);
-    font-family: var(--font-fa-pro);
+    font-family: var(--font-fa-free);
 }
 
 /*Expanded mobile menu below here*/
@@ -233,7 +233,7 @@
     content: var(--search);
     pointer-events: none;
     color: var(--color-white);
-    font-family: var(--font-fa-pro);
+    font-family: var(--font-fa-free);
     font-size: 1.175rem;
     font-weight: 400;
 }

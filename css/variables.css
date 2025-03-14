@@ -74,6 +74,7 @@ body {
   --menu-sub-menu-toggle-height: 20px;
   --minimum-clickable-icon-size: 20px;
   --font-fa-pro: "Font Awesome 5 Pro";
+  --font-fa-free: "Font Awesome 5 Free";
   --font-fa-brands: "Font Awesome 5 Brands";
   --banner-content-padding: var(--spacing-large) var(--spacing-largest);
   --banner-content-margin: calc(var(--spacing-large) * 2);

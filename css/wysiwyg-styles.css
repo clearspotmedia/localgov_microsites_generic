@@ -11,7 +11,7 @@
 .alert:before {
   position: absolute;
   left: 1rem;
-  font-family: "Font Awesome 5 Pro";
+  font-family: var(--font-fa-free);
   font-weight: 900;
 }
 
@@ -27,7 +27,7 @@
 
 .alert-warning:before {
   content: var(--alert-warning);
-  font-family: "Font Awesome 5 Pro";
+  font-family: var(--font-fa-free);
   font-weight: 900;
 }
 
@@ -39,7 +39,7 @@
 .alert-info:before {
   left: 1.3rem;
   content: var(--alert-info);
-  font-family: "Font Awesome 5 Pro";
+  font-family: var(--font-fa-free);
   font-weight: 900;
 }
 
@@ -50,7 +50,7 @@
 
 .alert-success:before {
   content: var(--alert-success);
-  font-family: "Font Awesome 5 Pro";
+  font-family: var(--font-fa-free);
   font-weight: 900;
 }
 
@@ -63,7 +63,7 @@
 .alert-fail:before,
 .alert-danger:before {
   content: var(--alert-fail);
-  font-family: "Font Awesome 5 Pro";
+  font-family: var(--font-fa-free);
   font-weight: 900;
 }
 
@@ -106,7 +106,7 @@ a.btn.btn-start:focus {
 /*Start button icon*/
 .btn.btn-start::after {
   position: relative;
-  font-family: "FontAwesome";
+  font-family: var(--font-fa-free);
 }
 
 /*Tick list*/
@@ -122,7 +122,7 @@ a.btn.btn-start:focus {
 /*Tick list ticks*/
 .list-checked li::marker {
   content: "\f00c";
-  font-family: "FontAwesome";
+  font-family: var(--font-fa-free);
   color: var(--color-green);
 }
 

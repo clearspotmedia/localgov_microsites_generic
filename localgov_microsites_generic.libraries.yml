@@ -1,7 +1,3 @@
-fontawesome:
-  js:
-    https://kit.fontawesome.com/0b686126e6.js: { type: external, minified: true }
-
 variables:
   css:
     base:

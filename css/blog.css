@@ -56,7 +56,7 @@
   /*Icons on taxonomy wrappers - Categories*/
   .field--name-localgov-event-categories .field__item:before {
     content: var(--tags-icon);
-    font-family: "Font Awesome 5 Pro";
+    font-family: var(--font-fa-free);
     font-weight: 900;
     font-size: var(--font-size-medium);
     margin-right: var(--spacing-smaller);
@@ -65,7 +65,7 @@
   /*Icons on taxonomy wrappers - Locality*/
   .field--name-localgov-event-locality:before {
     content: var(--map-location-dot-icon);
-    font-family: "Font Awesome 5 Pro";
+    font-family: var(--font-fa-free);
     font-weight: 900;
     font-size: var(--font-size-medium);
     position: absolute;
@@ -75,7 +75,7 @@
   /*Icons on taxonomy wrappers - Provider*/
   .field--name-localgov-event-provider:before{
     content: var(--location-dot-icon);
-    font-family: "Font Awesome 5 Pro";
+    font-family: var(--font-fa-free);
     font-weight: 900;
     font-size: var(--font-size-medium);
     position: absolute;
@@ -85,7 +85,7 @@
   /*Icons on taxonomy wrappers - Price*/
   .field--name-localgov-event-price:before{
     content: var(--sterling-sign-icon);
-    font-family: "Font Awesome 5 Pro";
+    font-family: var(--font-fa-free);
     font-weight: 900;
     font-size: var(--font-size-medium);
     position: absolute;
@@ -96,7 +96,7 @@
   /*Icons on taxonomy wrappers - Categories*/
   .field--name-localgov-event-venue:before{
     content: var(--location-dot-icon);
-    font-family: "Font Awesome 5 Pro";
+    font-family: var(--font-fa-free);
     font-weight: 900;
     font-size: var(--font-size-medium);
     position: absolute;

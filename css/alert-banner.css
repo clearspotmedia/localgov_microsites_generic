@@ -38,7 +38,7 @@
   margin: 10px 15px 10px 0;
   content: var(--arrow-right);
   color: inherit;
-  font-family: var(--font-fa-pro);
+  font-family: var(--font-fa-free);
 }
 
 .localgov-alert-banner .localgov-alert-banner__content > div p {
@@ -82,5 +82,5 @@
   display: inline-block;
   text-decoration: none !important;
   color: inherit;
-  font-family: var(--font-fa-pro);
+  font-family: var(--font-fa-free);
 }

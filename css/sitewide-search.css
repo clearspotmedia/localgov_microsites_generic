@@ -46,7 +46,7 @@
   right: 15px;
   content: var(--arrow-right);
   color: var(--color-white);
-  font-family: var(--font-fa-pro);
+  font-family: var(--font-fa-free);
   font-size: 1.375rem;
   font-weight: 900;
 }

@@ -5,8 +5,6 @@ core_version_requirement: ^9 || ^10
 base theme: "localgov_microsites_base"
 
 libraries-extend:
-  localgov_microsites_base/fontawesome:
-    - localgov_microsites_generic/fontawesome
   localgov_microsites_base/variables:
     - localgov_microsites_generic/variables
   localgov_base/grid:
