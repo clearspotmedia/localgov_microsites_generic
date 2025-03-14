@@ -1,0 +1,12 @@
+.lgd-guide-nav {
+    background-color: var(--color-white);
+}
+
+.lgd-guide-nav__list-item {
+    font-size: var(--font-size);
+    margin-bottom: var(--spacing-smaller);
+}
+
+.lgd-guide-nav__list {
+    padding-left: var(--spacing-large);
+}

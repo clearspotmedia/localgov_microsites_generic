@@ -92,3 +92,8 @@ events:
     theme:
       css/events.css: {}
 
+guide-nav:
+  css:
+    theme:
+      css/guide-nav.css: {}
+

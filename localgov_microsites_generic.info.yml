@@ -43,6 +43,8 @@ libraries-extend:
     - localgov_microsites_generic/events
   localgov_base/sitewide-search:
     - localgov_microsites_generic/sitewide-search
+  localgov_base/guide-nav:
+    - localgov_microsites_generic/guide-nav
 
 libraries-override:
   localgov_microsites_base/menu:
