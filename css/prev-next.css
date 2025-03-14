@@ -1,0 +1,7 @@
+.lgd-prev-next__link:hover {
+    background-color: var(--button-bg-color-hover);
+}
+
+.lgd-prev-next__link:focus .lgd-prev-next__icon path {
+    fill: var(--color-black);
+}

@@ -96,4 +96,8 @@ guide-nav:
   css:
     theme:
       css/guide-nav.css: {}
+prev-next:
+  css:
+    theme:
+      css/prev-next.css: {}
 

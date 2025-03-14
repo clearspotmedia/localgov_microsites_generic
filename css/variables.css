@@ -123,4 +123,5 @@ body {
   --guide-nav-column-count: 1;
   --section-spacing-vertical-guide-nav: var(--spacing);
   --section-spacing-horizontal-guide-nav: 0;
+  --button-icon-color-hover: var(--color-white);
 }

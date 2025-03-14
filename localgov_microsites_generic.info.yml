@@ -45,6 +45,8 @@ libraries-extend:
     - localgov_microsites_generic/sitewide-search
   localgov_base/guide-nav:
     - localgov_microsites_generic/guide-nav
+  localgov_base/prev-next:
+    - localgov_microsites_generic/prev-next
 
 libraries-override:
   localgov_microsites_base/menu:
