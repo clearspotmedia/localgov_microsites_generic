@@ -91,36 +91,21 @@
 
 	{% set content_type = node.bundle %}
 
-	{% if content_type == 'localgov_guides_overview' or content_type == 'localgov_guides_page' %}
+  {% if content_type == 'localgov_guides_overview' 
+  or content_type == 'localgov_guides_page' 
+  or content_type == 'localgov_directory'
+  or content_type == 'localgov_directories_venue' 
+  or content_type == 'localgov_directories_page' 
+  or content_type == 'localgov_services_landing' 
+  or content_type == 'localgov_services_page'
+  or content_type == 'localgov_step_by_step_overview' 
+  or content_type == 'localgov_step_by_step_page'
+  or content_type == 'localgov_newsroom'
+  or content_type == 'localgov_newsroom_article'
+	or content_type == 'localgov_webform'%}
 		{{ page.breadcrumb }}
 		{{ page.page_title }}
 	{% endif %}
-
-	{% if content_type == 'localgov_services_landing' or content_type == 'localgov_services_page' %}
-		{{ page.breadcrumb }}
-		{{ page.page_title }}
-	{% endif %}
-
-	{% if content_type == 'localgov_step_by_step_overview' or content_type == 'localgov_step_by_step_page' %}
-		{{ page.breadcrumb }}
-		{{ page.page_title }}
-	{% endif %}
-
-	{% if content_type == 'localgov_directory' or content_type == 'localgov_directory_page'%}
-		{{ page.breadcrumb }}
-		{{ page.page_title }}
-	{% endif %}
-
-	{% if content_type == 'localgov_newsroom' or content_type == 'localgov_newsroom_article'%}
-		{{ page.breadcrumb }}
-		{{ page.page_title }}
-	{% endif %}
-
-	{% if content_type == 'localgov_webform'%}
-		{{ page.breadcrumb }}
-		{{ page.page_title }}
-	{% endif %}
-
 
 	{% if has_content_top %}
 		{{ page.content_top }}
