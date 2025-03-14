@@ -91,18 +91,8 @@
 
 	{% set content_type = node.bundle %}
 
-  {% if content_type == 'localgov_guides_overview' 
-  or content_type == 'localgov_guides_page' 
-  or content_type == 'localgov_directory'
-  or content_type == 'localgov_directories_venue' 
-  or content_type == 'localgov_directories_page' 
-  or content_type == 'localgov_services_landing' 
-  or content_type == 'localgov_services_page'
-  or content_type == 'localgov_step_by_step_overview' 
-  or content_type == 'localgov_step_by_step_page'
-  or content_type == 'localgov_newsroom'
-  or content_type == 'localgov_newsroom_article'
-	or content_type == 'localgov_webform'%}
+
+  {% if content_type != 'localgov_page'%}
 		{{ page.breadcrumb }}
 		{{ page.page_title }}
 	{% endif %}
