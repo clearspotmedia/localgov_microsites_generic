@@ -41,3 +41,13 @@
 .page-node-type-localgov-directory .lgd-teaser__image + .lgd-teaser__content {
     margin-left: 0;
 }
+
+/*Teaser overrides for Service landing*/
+.node--type-localgov-services-landing .lgd-teaser-list .service-landing-page__service,
+.node--type-localgov-services-sub-landing .lgd-teaser-list .service-landing-page__service{
+    margin-top: var(--spacing-large);
+}
+
+/*Hide read more in sub landing teasers*/
+.lgd-teaser__content--localgov-services-sublanding .links{
+    display: none;}

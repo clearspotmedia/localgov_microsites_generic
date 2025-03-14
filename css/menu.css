@@ -22,6 +22,11 @@
     padding-left: 0;
 }
 
+/*Main menu items align bottom when multi line*/
+.microsite-header__menu .menu--menu-level-0 {
+    align-items: flex-end;
+}
+
 /*Main menu links*/
 .js .menu li a {
     display: inline-block;

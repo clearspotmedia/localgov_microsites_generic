@@ -65,7 +65,7 @@ off-canvas:
 menu:
   css:
     theme:
-      css/menu.css: {}
+      css/menu.css: { weight: 200 }
 
 wysiwyg-styles:
   css:
