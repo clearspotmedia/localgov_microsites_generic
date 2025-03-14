@@ -1,4 +1,9 @@
 /*Service cta buttons to use microsite design setting colours*/
+
+.service-cta-block__list {
+    padding: var(--spacing) 0;
+}
+
 .service-cta-block__link {
     font-weight: var(--heading-font-weight);
 }
