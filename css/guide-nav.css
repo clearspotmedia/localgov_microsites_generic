@@ -1,9 +1,10 @@
 .lgd-guide-nav {
     background-color: var(--color-white);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .lgd-guide-nav__list-item {
-    font-size: var(--font-size);
+    font-size: var(--font-siz-small);
     margin-bottom: var(--spacing-smaller);
 }
 
