@@ -91,6 +91,7 @@
   {{ attach_library('localgov_base/full') }}
   {% if content_type == 'localgov_directories_venue' 
         or content_type == 'localgov_directories_page' 
+		or content_type == 'localgov_directory_promo_page'
         or content_type == 'localgov_directory' %}
     {{ attach_library('localgov_base/directories') }}
   {% endif %}

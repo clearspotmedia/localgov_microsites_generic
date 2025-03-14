@@ -91,9 +91,10 @@
 
 	{% set content_type = node.bundle %}
 
+	{{ page.breadcrumb }}
 
-  {% if content_type != 'localgov_page'%}
-		{{ page.breadcrumb }}
+	{% if content_type != 'localgov_page' 
+  and content_type != 'localgov_directory_promo_page' %}
 		{{ page.page_title }}
 	{% endif %}
 
@@ -146,13 +147,13 @@
 		{# When we have no sidebars #}
 	{% else %}
 		{# 
-								      If there are no sidebars, the content region take up 100% of the space, but:
-								      1.  If we are on a node page, we do not constrain the content (this will be handled 
-								          by the node templates, so some parts of the template (hero, etc) can be the full
-								          width of the screen).
-								      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
-								          pages, login page, etc are not bleeding to the edge of the screen.
-								    #}
+												      If there are no sidebars, the content region take up 100% of the space, but:
+												      1.  If we are on a node page, we do not constrain the content (this will be handled 
+												          by the node templates, so some parts of the template (hero, etc) can be the full
+												          width of the screen).
+												      2.  If we are not on a node page, we'll contain the content, so views pages, taxonomy
+												          pages, login page, etc are not bleeding to the edge of the screen.
+												    #}
 		{% if not node %}
 			<div class="lgd-container padding-horizontal">
 				{{ page.content }}
