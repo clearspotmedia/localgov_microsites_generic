@@ -14,14 +14,6 @@
 }
 
 
-
-body {
-  --tags-icon: "\f02c";
-  --location-dot-icon: "\f3c5";
-  --sterling-sign-icon: "\f154";
-  --map-location-dot-icon: "\f5a0";
-}
-
 /*Icons on taxonomy wrappers - Categories*/
 .field--name-localgov-event-categories .field__item {
   position: relative;

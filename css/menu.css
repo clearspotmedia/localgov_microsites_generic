@@ -58,6 +58,7 @@
 .lgd-region--main-menu .menu li .menu {
     position: absolute;
     z-index: 999;
+    background-color: var(--menu-sub-menu-background-colour);
     min-width: var(--menu-sub-menu-min-width);
     font-size: var(--menu-sub-menu-font-size);
     box-shadow:
@@ -69,6 +70,7 @@
 .js .menu li .menu li a {
     font-weight: 400;
     text-decoration: none;
+    color: var(--menu-sub-menu-link-colour);
 }
 
 /*Child page links hover in flyout and sub mobile menu*/
@@ -91,7 +93,8 @@
 .js .menu .menu-item--active-trail:hover a {
     color: var(--header-background-color);
 }
-
+--menu-sub-menu-background-colour
+--menu-sub-menu-link-colour
 /*Main menu active tab link focus */
 .js .menu .menu-item--active-trail a:focus {
     color: var(--color-black);
