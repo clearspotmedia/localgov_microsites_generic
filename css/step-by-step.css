@@ -1,0 +1,26 @@
+/*Remove padding around step by step content, caused by nested padding horizontal containers*/
+.page-node-type-localgov-step-by-step-page article .padding-horizontal:first-child {
+    padding: 0;
+}
+
+/*Tighten up sidebar on step by step part of and menu*/
+.page-node-type-localgov-step-by-step-page .lgd-region--sidebar-second,
+.page-node--type-localgov-step-by-step-page aside {
+    padding-top: 0;
+}
+
+/*Tighten up sidebar on step by step part of and menu*/
+.page-node-type-localgov-step-by-step-page .step-by-step-pages__relationship {
+    margin-bottom: 0;
+}
+
+.step-list button {
+    padding: var(--spacing) 0;
+}
+
+/*Make part of show at all sizes*/
+@media screen and (min-width: 48rem) {
+    .block-views-blocklocalgov-step-by-step-navigation-steps .step-by-step-pages__relationship {
+        display: block;
+    }
+}

@@ -111,3 +111,8 @@ service-cta-block:
   css:
     theme:
       css/service-cta-block.css: {}
+
+step-by-step:
+  css:
+    theme:
+      css/step-by-step.css: {}
