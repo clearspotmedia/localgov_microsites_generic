@@ -30,7 +30,13 @@
   padding: var(--spacing) 0;
 }
 
+/*Directory promo page standfirst*/
 .full .field--name-localgov-directory-standfirst {
   max-width: var(--width-restricted-width-section);
   margin-bottom: var(--spacing-larger);
+}
+
+/*Directory promo page standfirst*/
+.full .field--name-localgov-directory-standfirst, .full .field--name-localgov-page-summary {
+  font-size: var(--font-size-h5);
 }
