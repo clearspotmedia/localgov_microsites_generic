@@ -8,15 +8,25 @@
     font-weight: var(--heading-font-weight);
 }
 
-.service-cta-block__link--cta-action,
-.service-cta-block__link--cta-info {
-    background-color: var(--color-accent-2);
+.service-cta-block__link--cta-action {
+    background-color: var(--color-accent);
+    color: var(--color-accent-contrast);
 }
 
-.service-cta-block__link--cta-action:hover,
+.service-cta-block__link--cta-action:hover {
+    background-color: var(--color-accent-2);
+    color: var(--color-accent-2-contrast);
+    text-decoration: none;
+}
+
+.service-cta-block__link--cta-info {
+    background-color: var(--color-accent-2);
+    color: var(--color-accent-2-contrast);
+}
+
 .service-cta-block__link--cta-info:hover {
     background-color: var(--color-accent);
-    color: var(--color-white);
+    color: var(--color-accent--contrast);
     text-decoration: none;
 }
 

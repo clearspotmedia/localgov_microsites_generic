@@ -22,8 +22,8 @@
     padding-left: 0;
 }
 
-/*Main menu items align bottom when multi line*/
-.microsite-header__menu .menu--menu-level-0 {
+/*Main menu (desktop) items align bottom when multi line*/
+.lgd-region--main-menu .menu--menu-level-0 {
     align-items: flex-end;
 }
 
@@ -54,7 +54,7 @@
     display: none;
 }
 
-/*Child page ul links wrapper as flyout on Desktop */
+/*Main menu (desktop) uhild page ul links wrapper as flyout */
 .lgd-region--main-menu .menu li .menu {
     position: absolute;
     z-index: 999;
@@ -70,7 +70,6 @@
 .js .menu li .menu li a {
     font-weight: 400;
     text-decoration: none;
-    color: var(--menu-sub-menu-link-colour);
 }
 
 /*Child page links hover in flyout and sub mobile menu*/
@@ -89,14 +88,41 @@
     color: var(--header-background-color);
 }
 
-/*Main menu active tab link hover */
-.js .menu .menu-item--active-trail:hover a {
+/*Main menu active trail links */
+.lgd-region--main-menu .menu-item--active-trail.menu-item--level-0 a {
     color: var(--header-background-color);
+}
+
+/*Main menu (Desktop only) active trail link hover */
+.lgd-region--main-menu li.menu-item--active-trail.menu-item--level-0 a:hover {
+    color: var(--header-background-color);
+    text-decoration: underline;
+}
+
+/*Main menu active tab link hover */
+.js .menu .menu-item--active-trail:hover .menu-item--level-0 a {
+    color: var(--header-background-color);
+}
+
+/*Sub menu active tab link */
+.lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-1 a {
+    color: var(--header-link-color);
+}
+
+/*Sub menu active tab link hover */
+.lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-1 a:hover {
+    color: var(--header-link-color);
+}
+
+/*Sub menu link hover */
+.js .menu li.menu-item--active-trail a:hover {
+    color: var(--header-background-color);
+    text-decoration: underline;
 }
 
 /*Main menu active tab link focus */
 .js .menu .menu-item--active-trail a:focus {
-    color: var(--color-black);
+    background-color: var(--header-link-color);
     text-decoration: none;
 }
 
