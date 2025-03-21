@@ -36,18 +36,28 @@
   line-height: initial;
   margin-left: 0;
   margin-right: auto;
+  max-width: 55%;
 }
 
-/* Vertically center the site slogan inner text */
-.microsite-header__name {
-  align-content: center;
+/* Set a max width on the site slogan on tablet */
+@media screen and (max-width: 1024px) {
+  .microsite-header__name-slogan {
+    max-width: 35%;
+  }
 }
+
 
 /* Set a max width on the site slogan on mobile */
 @media screen and (max-width: 768px) {
   .microsite-header__name-slogan {
-    max-width: 200px;
+    max-width: 30%;
   }
+}
+
+/* Vertically center the site slogan inner text */
+.microsite-header__name,
+.microsite-header__slogan {
+  align-content: center;
 }
 
 /* Custom class so we can reposition the pre header (search bar) */
