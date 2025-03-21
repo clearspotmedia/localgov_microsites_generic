@@ -46,7 +46,6 @@
   }
 }
 
-
 /* Set a max width on the site slogan on mobile */
 @media screen and (max-width: 768px) {
   .microsite-header__name-slogan {

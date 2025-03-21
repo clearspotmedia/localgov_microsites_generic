@@ -9,15 +9,15 @@
 /*Mobile menu toggle*/
 .microsite-header__off-canvas-toggle {
     background-color: var(--header-background-color);
-    color: var(--menu-sub-menu-link-colour);
-    border-color: var(--menu-sub-menu-link-colour);
+    color: var(--header-link-color);
+    border-color: var(--header-link-color);
 }
 /*Mobile menu toggle hover*/
 .microsite-header__off-canvas-toggle:hover,
 .microsite-header__off-canvas-toggle[aria-expanded="true"]:hover {
-    background-color: var(--menu-sub-menu-link-colour);
+    background-color: var(--header-link-color);
     color: var(--header-background-color);
-    border-color: var(--menu-sub-menu-link-colour);
+    border-color: var(--header-link-color);
     box-shadow: none;
 }
 

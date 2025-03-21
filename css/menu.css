@@ -109,7 +109,7 @@
     color: var(--header-link-color);
 }
 
-/*Sub menu active tab link hover */
+/*Sub menu active trail link hover */
 .lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-1 a:hover {
     color: var(--header-link-color);
 }
