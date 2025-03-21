@@ -28,7 +28,8 @@
 }
 
 /*Main menu links*/
-.js .menu li a {
+.lgd-region--main-menu .menu li a,
+.off-canvas .menu li a {
     display: inline-block;
     padding: 8px;
     text-decoration: none;
@@ -36,21 +37,26 @@
 }
 
 /*Main menu links hover*/
-.js .menu li a:hover {
+.lgd-region--main-menu .menu li a:hover,
+.off-canvas .menu li a:hover {
     color: var(--header-link-color);
     text-decoration: underline;
 }
 
 /*Main menu links focus*/
-.js .menu li a:focus,
-.js .menu li:focus a {
+.lgd-region--main-menu .menu li a:focus,
+.lgd-region--main-menu .menu li:focus a,
+.off-canvas .menu li a:focus,
+.off-canvas .menu li:focus a {
+    width: 100%;
     background-color: var(--color-focus);
     color: var(--color-black);
     text-decoration: none;
 }
 
 /* Sub menu wrapper hidden by default all screen sizes*/
-.js .menu li .menu {
+.lgd-region--main-menu .menu li .menu,
+.off-canvas .menu li .menu {
     display: none;
 }
 
@@ -67,49 +73,55 @@
 }
 
 /*Child page links in flyout and sub mobile menu*/
-.js .menu li .menu li a {
+.lgd-region--main-menu .menu li .menu li a,
+.off-canvas .menu li .menu li a {
     font-weight: 400;
     text-decoration: none;
 }
 
 /*Child page links hover in flyout and sub mobile menu*/
-.js .menu li .menu li a:hover {
+.lgd-region--main-menu .menu li .menu li a:hover,
+.off-canvas .menu li .menu li a:hover {
     text-decoration: underline;
 }
 
 /*Main menu active tab background*/
-.js .menu-item--active-trail,
-.js .menu-item--active-trail .menu {
+.lgd-region--main-menu .menu-item--active-trail,
+.lgd-region--main-menu .menu-item--active-trail .menu,
+.off-canvas .menu-item--active-trail,
+.off-canvas--main-menu .menu-item--active-trail .menu {
     background-color: var(--header-link-color);
 }
 
 /*Main menu active tab link colour*/
-.js .menu-item--active-trail a {
+.lgd-region--main-menu .menu-item--active-trail a,
+.off-canvas .menu-item--active-trail a {
     color: var(--header-background-color);
 }
 
-/*Main menu active trail links */
+/*Main menu (desktop only) active trail links */
 .lgd-region--main-menu .menu-item--active-trail.menu-item--level-0 a {
     color: var(--header-background-color);
 }
 
-/*Main menu (Desktop only) active trail link hover */
+/*Main menu (desktop only) active trail link hover */
 .lgd-region--main-menu li.menu-item--active-trail.menu-item--level-0 a:hover {
     color: var(--header-background-color);
     text-decoration: underline;
 }
 
 /*Main menu active tab link hover */
-.js .menu .menu-item--active-trail:hover .menu-item--level-0 a {
+.lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-0 a,
+.off-canvas .menu-item--active-trail:hover .menu-item--level-0 a {
     color: var(--header-background-color);
 }
 
-/*Sub menu active tab link */
+/*Sub menu active tab link (desktop only) */
 .lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-1 a {
     color: var(--header-link-color);
 }
 
-/*Sub menu active trail link hover */
+/*Sub menu active trail link hover (desktop only) */
 .lgd-region--main-menu .menu-item--active-trail:hover .menu-item--level-1 a:hover {
     color: var(--header-link-color);
 }
@@ -121,18 +133,24 @@
 }
 
 /*Main menu active tab link focus */
-.js .menu .menu-item--active-trail a:focus {
-    background-color: var(--header-link-color);
+.lgd-region--main-menu .menu .menu-item--active-trail a:focus,
+.off-canvas .menu .menu-item--active-trail a:focus,
+.lgd-region--main-menu .menu .menu-item--active-trail a:focus:hover,
+.off-canvas .menu .menu-item--active-trail a:focus:hover {
+    background-color: var(--color-focus);
+    color: var(--color-black);
     text-decoration: none;
 }
 
 /*Hide origial toggle span - causes gap*/
-.js .menu__sub-menu-toggle-icon {
+.lgd-region--main-menu .menu__sub-menu-toggle-icon,
+.loff-canvas .menu__sub-menu-toggle-icon {
     display: none;
 }
 
 /*Wrapper for toggle button for the sub-menu*/
-.js .menu__sub-menu-toggle {
+.lgd-region--main-menu .menu__sub-menu-toggle,
+.off-canvas .menu__sub-menu-toggle {
     display: inline;
     background: none;
     padding: 0;
@@ -144,7 +162,8 @@
 }
 
 /*Toggle button for the sub-menu*/
-.js .menu__sub-menu-toggle:after {
+.lgd-region--main-menu .menu__sub-menu-toggle:after,
+.off-canvas .menu__sub-menu-toggle:after {
     color: var(--header-link-color);
     content: var(--chevron-down);
     pointer-events: none;
@@ -154,15 +173,20 @@
 }
 
 /*Toggle button in active trail*/
-.js .menu .menu-item--active-trail .menu__sub-menu-toggle:after {
+.lgd-region--main-menu .menu .menu-item--active-trail .menu__sub-menu-toggle:after,
+.off-canvas .menu .menu-item--active-trail .menu__sub-menu-toggle:after {
     color: var(--header-background-color);
 }
 
 /*Toggle button focus style*/
-.js .menu__sub-menu-toggle:focus,
-.js .menu__sub-menu-toggle:focus:after,
-.js .menu__sub-menu-toggle:focus:after,
-.js .menu__sub-menu-toggle:focus-visible:after {
+.lgd-region--main-menu .menu__sub-menu-toggle:focus,
+.lgd-region--main-menu .menu__sub-menu-toggle:focus:after,
+.lgd-region--main-menu .menu__sub-menu-toggle:focus:after,
+.lgd-region--main-menu .menu__sub-menu-toggle:focus-visible:after,
+.off-canvas .menu__sub-menu-toggle:focus,
+.off-canvas .menu__sub-menu-toggle:focus:after,
+.off-canvas .menu__sub-menu-toggle:focus:after,
+.off-canvas .menu__sub-menu-toggle:focus-visible:after  {
     background-color: var(--color-focus);
     color: var(--color-black);
     border: 0;
@@ -171,7 +195,8 @@
 }
 
 /*Toggle button rotation when expanded*/
-.js .menu__sub-menu-toggle[aria-expanded="true"]:after {
+.lgd-region--main-menu .menu__sub-menu-toggle[aria-expanded="true"]:after,
+.off-canvas .menu__sub-menu-toggle[aria-expanded="true"]:after {
     content: var(--chevron-up);
     font-family: var(--font-fa-free);
 }
@@ -217,13 +242,13 @@
 }
 
 /* Flex layout search in pre header and off canvas */
-.block-localgov-search form {
+.off-canvas .block-localgov-search form {
     padding: 0;
     display: flex;
 }
 
 /* Remove margin under search in pre header and off canvas and off canvas */
-.block-localgov-search form .form-item {
+.off-canvas .block-localgov-search form .form-item {
     margin-bottom: 0;
 }
 
@@ -234,7 +259,8 @@
 }
 
 /* Style input search in pre header and off canvas */
-.block-localgov-search input.form-text {
+.microsite-header__pre-header .block-localgov-search input.form-text,
+.off-canvas .block-localgov-search input.form-text {
     height: 45px;
     color: var(--color-black);
     font-size: 1.125rem;
@@ -249,12 +275,14 @@
 }
 
 /* Prepare wrapper for search icon in search in pre header and off canvas */
-.block-localgov-search .form-wrapper {
+.microsite-header__pre-header .block-localgov-search .form-wrapper,
+.off-canvas .block-localgov-search .form-wrapper {
     position: relative;
 }
 
 /* Search icon in pre header and off canvas */
-.block-localgov-search .form-wrapper:after {
+.microsite-header__pre-header .block-localgov-search .form-wrapper:after,
+.off-canvas .block-localgov-search .form-wrapper:after {
     position: absolute;
     top: 9px;
     left: 12px;
@@ -267,7 +295,8 @@
 }
 
 /* Search submit button in pre header and off canvas */
-.block-localgov-search .form-wrapper input.button {
+.microsite-header__pre-header .block-localgov-search .form-wrapper input.button ,
+.off-canvas .block-localgov-search .form-wrapper input.button {
     width: 45px;
     height: 45px;
     padding: 0;
@@ -278,41 +307,48 @@
 }
 
 /* Search submit button hover triggered by it's wrapper, in pre header and off canvas */
-.block-localgov-search .form-wrapper:hover:not(:focus) input {
+.microsite-header__pre-header .block-localgov-search .form-wrapper:hover:not(:focus) input,
+.off-canvas .block-localgov-search .form-wrapper:hover:not(:focus) input {
     background: var(--color-white);
 }
 
 /* Search submit button hover in pre header and off canvas */
-.block-localgov-search .form-wrapper input.button:not(:focus):hover {
+.microsite-header__pre-header .block-localgov-search .form-wrapper input.button:not(:focus):hover,
+.off-canvas .block-localgov-search .form-wrapper input.button:not(:focus):hover {
     background: var(--color-black);
     color: transparent;
     border: 3px solid var(--color-white);
 }
 
 /* Search submit button icon hover triggered by it's wrapper, in pre header and off canvas */
-.block-localgov-search .form-wrapper:hover:not(:focus)::after {
+.microsite-header__pre-header .block-localgov-search .form-wrapper:hover:not(:focus)::after
+.off-canvas .block-localgov-search .form-wrapper:hover:not(:focus)::after {
     color: var(--color-white);
 }
 
 /* Search submit button focus in pre header and off canvas */
-.block-localgov-search input.button:focus,
-.block-localgov-search input.button:active,
-.block-localgov-search input.button:focus:hover {
+.microsite-header__pre-header .block-localgov-search input.button:focus,
+.microsite-header__pre-header .block-localgov-search input.button:active,
+.microsite-header__pre-header .block-localgov-search input.button:focus:hover,
+.off-canvas .block-localgov-search input.button:focus,
+.off-canvas .block-localgov-search input.button:active,
+.off-canvas .block-localgov-search input.button:focus:hover {
     background: var(--color-black);
     outline: 3px solid var(--color-focus);
 }
 
 /* Search placeholder in pre header and off canvas */
-.block-localgov-search input::placeholder {
+.microsite-header__pre-header .block-localgov-search input::placeholder,
+.off-canvas .block-localgov-search input::placeholder {
     color: var(--placeholder);
 }
 
-/*Remove unwanted padding from search form*/
+/*Remove unwanted padding from search form (mobile header)*/
 .off-canvas form {
     padding: 0;
 }
 
-/*Search full width*/
+/*Search full width (mobile header)*/
 .off-canvas .js-form-item {
     flex-basis: 100%;
 }
