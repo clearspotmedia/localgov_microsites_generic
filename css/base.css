@@ -143,3 +143,9 @@ footer ul {
 .full__layout-section > .field--name-localgov-paragraph-content > .field__item {
   padding: 0;
 }
+
+/*Call out box on grey layout colour fix*/
+.lgd-page-section--bg-colour-3 .call-out-box h2,
+.lgd-page-section--bg-colour-3 .call-out-box h3{
+  color: var(--call-out-box-text-color);
+}
