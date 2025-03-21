@@ -16,6 +16,10 @@ a {
   }
 }
 
+main{
+  padding-bottom: 0;
+}
+
 main p,
 main ul,
 main ol {
@@ -77,12 +81,8 @@ main h1 {
   padding: var(--spacing) 0;
 }
 
-footer p,
-footer ul {
-  font-size: 1rem;
-}
 
-/*Purple links on grey bg*/
+/*Links on grey bg*/
 .lgd-page-section--bg-colour-3 .link:not(.link--button-style) a {
   color: var(--button-bg-color);
 }
@@ -101,14 +101,21 @@ footer ul {
   text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
 }
 
-.block-localgov-eu-cookie-compliance {
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 0 15px;
-}
-
 aside.lgd-row__one-third {
   padding-top: 1.5rem;
+}
+
+.microsite-footer__housekeeping ul:not(.contextual-links) {
+  padding: 0;
+}
+
+footer p,
+footer ul {
+  font-size: 1rem;
+}
+
+.region-microsites-footer a:focus {
+  color: var(--color-black);
 }
 
 /*Page builder blocks overrides*/
