@@ -16,7 +16,7 @@ a {
   }
 }
 
-main{
+main {
   padding-bottom: 0;
 }
 
@@ -53,7 +53,6 @@ main h1 {
 .full .field--name-body {
   padding: var(--spacing) 0;
 }
-
 
 /*Links on grey bg*/
 .lgd-page-section--bg-colour-3 .link:not(.link--button-style) a {
@@ -119,6 +118,19 @@ footer ul {
 
 /*Call out box on grey layout colour fix*/
 .lgd-page-section--bg-colour-3 .call-out-box h2,
-.lgd-page-section--bg-colour-3 .call-out-box h3{
+.lgd-page-section--bg-colour-3 .call-out-box h3 {
   color: var(--call-out-box-text-color);
+}
+
+/*Standardised prev / next links with page titles*/
+.lgd-prev-next__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.lgd-prev-next__list-item-direcion {
+  display: flex;
+  padding-bottom: var(--spacing-small);
 }
