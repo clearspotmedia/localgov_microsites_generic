@@ -73,6 +73,7 @@
 
 {%
   set classes = [
+    'blog-channel',
     'full',
     'full--' ~ node.bundle|clean_class,
     'node',
@@ -85,28 +86,8 @@
 %}
 
 {{ attach_library('localgov_microsites_base/full') }}
-
-{% set content_type = node.bundle %}
-{% if not localgov_base_remove_css %}
-  {{ attach_library('localgov_base/full') }}
-  {% if content_type == 'localgov_directories_venue' 
-        or content_type == 'localgov_directories_page' 
-		or content_type == 'localgov_directory_promo_page'
-        or content_type == 'localgov_directory' %}
-    {{ attach_library('localgov_base/directories') }}
-  {% endif %}
-
-  {% if content_type == 'localgov_event' %}
-    {{ attach_library('localgov_base/events') }}
-  {% endif %}
-
-  {% if content_type == 'localgov_step_by_step_overview'
-        or content_type == 'localgov_step_by_step_page' %}
-    {{ attach_library('localgov_base/step-by-step') }}
-  {% endif %}
-{% endif %}
-
-{% block library_extend %}{% endblock %}
+{{ attach_library('localgov_base/sidebar') }}
+{{ attach_library('localgov_base/blog') }}
 
 <article{{attributes.addClass(classes).removeAttribute('role')}}>
 
@@ -115,33 +96,27 @@
 	{% endif %}
 
 	<div class="lgd-container padding-horizontal">
-
 		{% if content.group_page_top %}
-			{{ title_prefix }}
-			<h1{{title_attributes.addClass('full__title')}}>
-				{{ label }}
-			</h1>
-			{{ title_suffix }}
-			{% block blog_meta %}
-				{# Populated in the node--localgov-blog-post--full.html.twig template #}
-			{% endblock %}
-			{{ content.group_page_top|without('localgov_blog_author', 'localgov_blog_date', 'localgov_blog_categories') }}
+			{{ content.group_page_top }}
 		{% endif %}
 
-		<div{{content_attributes.addClass('full__content')}}>
-			{{ content|without('group_banner', 'group_page_top', 'group_page_bottom', 'localgov_paragraph_content') }}
+		<div class="lgd-row">
+			<div class="lgd-row__full">
+				<div class="lgd-blog--featured">
+					{{ content.localgov_blog_channel_featured }}
+				</div>
+			</div>
 		</div>
-	</div>
-	{% if node.localgov_paragraph_content.value %}
-		<div class="full__layout-section">
-			{{ content.localgov_paragraph_content }}
+
+		<div class="lgd-row">
+			<div class="lgd-row__two-thirds">
+				{{ content|without('body', 'localgov_blog_channel_featured') }}
+			</div>
+			<aside class="lgd-row__one-third">
+				<div class="blog-channel__sidebar">
+					{{ content.body }}
+				</div>
+			</aside>
 		</div>
-	{% endif %}
 
-	<div class="lgd-container padding-horizontal">
-		{% if content.group_page_bottom %}
-			{{ content.group_page_bottom }}
-		{% endif %}
-	</div>
-
-</article>
+	</article>
