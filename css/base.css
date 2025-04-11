@@ -31,10 +31,16 @@ main h1 {
   margin-bottom: var(--spacing);
 }
 
+.field--name-body h2:first-of-type,
 .field--name-localgov-text h2:first-of-type {
   margin-top: 0;
 }
 
+.field--name-body h2,
+.field--name-body h3,
+.field--name-body h4,
+.field--name-body h5,
+.field--name-body h6,
 .field--name-localgov-text h2,
 .field--name-localgov-text h3,
 .field--name-localgov-text h4,

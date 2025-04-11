@@ -1,5 +1,5 @@
 .region-microsites-footer a {
-  color: var(--color-accent);
+  color: var(--color-footer-link);
 }
 
 @media screen and (width <= 768px) {
