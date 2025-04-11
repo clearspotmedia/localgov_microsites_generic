@@ -231,22 +231,22 @@ color: var(--btn-start-color);
 }
 
 .inline-contact-details {
-  border-left: 0.3125rem solid var(--color-primary);
-  line-height: 2rem;
-  padding: 0 1.25rem;
+  border-left: 0.3125rem solid var(--color-accent);
+  border-top: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+  padding: 1.25rem 1.875rem;
 }
 
 .inset-text {
   background-color: var(--color-white);
   border-left: 0.3125rem solid var(--color-accent);
-  border-top: 1px solid var(--color-grey);
-  border-right: 1px solid var(--color-grey);
-  border-bottom: 1px solid var(--color-grey);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   padding: 1.25rem 1.875rem;
 }
 
 .inset-text a {
-  color: var(--color-primary-darken);
+  color: var(--color-link);
 }
 
 .lgd-action-link {
