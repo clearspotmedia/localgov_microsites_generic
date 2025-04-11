@@ -107,7 +107,7 @@ body {
   --location-dot-icon: "\f3c5";
   --sterling-sign-icon: "\f154";
   --map-location-dot-icon: "\f5a0";
-  --btn-start-icon-size: var(--chevron-right);
+  --btn-start-icon-size: 1rem;
   --btn-start-icon-top: 0;
   --guide-nav-column-count: 1;
   --section-spacing-vertical-guide-nav: var(--spacing);

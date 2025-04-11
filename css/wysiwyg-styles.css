@@ -284,15 +284,10 @@ ul.list-ticked li,ul.list-crossed li {
   padding-left: 2rem !important;
 }
 
-ul.list-ticked li::marker,ul.list-crossed li::marker {
-  content: "" !important;
-  color: transparent;
-}
-
-.list-ticked li {
-  background-image: url(../templates/includes/icons/tick-solid.svg);
-}
-
-.list-crossed li {
-  background-image: url(../templates/includes/icons/cross-solid.svg);
+.list-checked li::marker {
+  content: var(--alert-success);
+  font-family: var(--font-fa-free);
+  color: var(--color-green);
+  display: block;
+  font-weight: 900;
 }
