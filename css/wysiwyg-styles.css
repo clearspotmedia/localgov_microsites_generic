@@ -229,3 +229,70 @@ color: var(--btn-start-color);
 .btn.external-link:hover:after {
   background-color: var(--btn-start-external-link-icon-hover-color);
 }
+
+.inline-contact-details {
+  border-left: 0.3125rem solid var(--color-primary);
+  line-height: 2rem;
+  padding: 0 1.25rem;
+}
+
+.inset-text {
+  background-color: var(--color-white);
+  border-left: 0.3125rem solid var(--color-accent);
+  border-top: 1px solid var(--color-grey);
+  border-right: 1px solid var(--color-grey);
+  border-bottom: 1px solid var(--color-grey);
+  padding: 1.25rem 1.875rem;
+}
+
+.inset-text a {
+  color: var(--color-primary-darken);
+}
+
+.lgd-action-link {
+  background-image: url(../templates/includes/icons/circle-arrow-right-success.svg);
+  color: var(--color-link);
+  display: inline-block;
+  padding: 0.25rem 1rem 0.25rem 2.5rem;
+  background-position: left 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 1.875rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.lgd-action-link:focus {
+  color: var(--color-black);
+}
+
+.lgd-action-link:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 0.1875rem;
+}
+
+ul.list-ticked,ul.list-crossed {
+  padding-left: 0;
+}
+
+ul.list-ticked li,ul.list-crossed li {
+  background-position: left 0.125rem;
+  background-repeat: no-repeat;
+  background-size: var(--font-size);
+  margin-left: 0 !important;
+  padding-left: 2rem !important;
+}
+
+ul.list-ticked li::marker,ul.list-crossed li::marker {
+  content: "" !important;
+  color: transparent;
+}
+
+.list-ticked li {
+  background-image: url(/themes/custom/dandg/templates/includes/icons/tick-solid.svg);
+}
+
+.list-crossed li {
+  background-image: url(/themes/custom/dandg/templates/includes/icons/cross-solid.svg);
+}
