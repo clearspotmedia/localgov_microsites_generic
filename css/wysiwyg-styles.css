@@ -290,9 +290,9 @@ ul.list-ticked li::marker,ul.list-crossed li::marker {
 }
 
 .list-ticked li {
-  background-image: url(/themes/custom/dandg/templates/includes/icons/tick-solid.svg);
+  background-image: url(../templates/includes/icons/tick-solid.svg);
 }
 
 .list-crossed li {
-  background-image: url(/themes/custom/dandg/templates/includes/icons/cross-solid.svg);
+  background-image: url(../templates/includes/icons/cross-solid.svg);
 }
