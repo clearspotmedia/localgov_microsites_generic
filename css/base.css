@@ -26,6 +26,11 @@ main ol {
   font-size: 1.125rem;
 }
 
+main ul,
+main ol {
+  padding-left: 1.4rem;
+}
+
 main h1 {
   margin-top: var(--spacing);
   margin-bottom: var(--spacing);
@@ -110,12 +115,6 @@ footer ul {
 
 .full__layout-section .field--name-localgov-paragraph-content > .field__item {
   padding: 45px 0;
-}
-
-/*Text paragraph type*/
-.paragraph--type--localgov-page-section .paragraph--type--localgov-text .field--name-localgov-text ul {
-  margin: 0;
-  padding: 0 0 0 15px;
 }
 
 .full__layout-section > .field--name-localgov-paragraph-content > .field__item {
