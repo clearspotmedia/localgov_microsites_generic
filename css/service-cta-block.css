@@ -26,7 +26,7 @@
 
 .service-cta-block__link--cta-info:hover {
     background-color: var(--color-accent);
-    color: var(--color-accent--contrast);
+    color: var(--color-accent-contrast);
     text-decoration: none;
 }
 

@@ -50,3 +50,8 @@
   font-size: 1.375rem;
   font-weight: 900;
 }
+
+.search-results.lgd-search-results-list {
+  list-style: none;
+  padding-left: 0;
+}

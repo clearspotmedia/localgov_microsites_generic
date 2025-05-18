@@ -39,6 +39,7 @@
   content: var(--arrow-right);
   color: inherit;
   font-family: var(--font-fa-free);
+  font-weight: 900;
 }
 
 .localgov-alert-banner .localgov-alert-banner__content > div p {
@@ -55,6 +56,7 @@
 
 .localgov-alert-banner__close {
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .localgov-alert-banner__close:hover {

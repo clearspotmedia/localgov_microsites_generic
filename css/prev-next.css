@@ -1,7 +1,50 @@
-.lgd-prev-next__link:hover {
+/*Prev next specific to guides */
+
+/*Make contents of prev next button align vertically  */
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: flex-start;
+    border: 0;
+}
+
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__list-item-direcion {
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--spacing-small);
+    font-weight: bold;
+}
+
+/*Make previous and next stack vertically */
+.lgd-prev-next.lgd-prev-next--guides ul.lgd-prev-next__list {
+    flex-direction: column;
+    max-width: 48rem;
+    margin-top: var(--spacing-larger);
+}
+
+/*Space between previous and next when stacked vertically */
+.lgd-prev-next.lgd-prev-next--guides ul.lgd-prev-next__list li.lgd-prev-next__list-item {
+    margin-inline-end: 0;
+    margin-bottom: var(--spacing-smaller);
+}
+
+
+/*Remove padding from description inside prev next button  */
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__list-item--prev .lgd-prev-next__title {
+    padding-inline-start: 0;
+}
+
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__link:hover {
+    border: 0;
     background-color: var(--button-bg-color-hover);
 }
 
-.lgd-prev-next__link:focus .lgd-prev-next__icon path {
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__link:focus {
+    border: 0;
+    background-color: var(--color-focus);
+}
+
+.lgd-prev-next.lgd-prev-next--guides .lgd-prev-next__link:focus .lgd-prev-next__icon path {
     fill: var(--color-black);
 }

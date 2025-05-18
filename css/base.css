@@ -121,21 +121,228 @@ footer ul {
   padding: 0;
 }
 
-/*Call out box on grey layout colour fix*/
+
+/*Call outs could be moved to components/callout-box.css override*/
 .lgd-page-section--bg-colour-3 .call-out-box h2,
 .lgd-page-section--bg-colour-3 .call-out-box h3 {
   color: var(--call-out-box-text-color);
 }
 
-/*Standardised prev / next links with page titles*/
-.lgd-prev-next__link {
+/*Buttons in sections could be moved to components/page-sections.css override*/
+/*Buttons and links - page section no background*/
+/*Button icon*/
+.lgd-page-section--no-bg-colour .link.link--button-style .lgd-icon {
+  fill: var(--color-white);
+}
+/*Link icon*/
+.lgd-page-section--no-bg-colour .link.paragraph:not(.link--button-style) .lgd-icon {
+  fill: var(--color-accent);
+}
+
+/*Buttons and links - page section that is light grey*/
+/*Button icon*/
+.lgd-page-section--bg-colour-3 .link.link--button-style .lgd-icon {
+  fill: var(--color-white);
+}
+/*Link icon*/
+.lgd-page-section--bg-colour-3 .link.paragraph:not(.link--button-style) .lgd-icon {
+  fill: var(--color-accent);
+}
+
+/*Buttons and links - page section that is accent 1 */
+/*Button*/
+.lgd-page-section--bg-colour-1 .link.link--button-style .link-wrapper {
+  border: 0;
+  background-color: var(--color-accent-2);
+}
+/*Button icon*/
+.lgd-page-section--bg-colour-1 .link.link--button-style .lgd-icon {
+  fill: var(--color-white);
+}
+/*Link icon*/
+.lgd-page-section--bg-colour-1 .link.paragraph:not(.link--button-style) .lgd-icon {
+  fill: var(--color-white);
+}
+
+/*Buttons and links - page section that is accent 2 */
+/*Button*/
+.lgd-page-section--bg-colour-2 .link.link--button-style .link-wrapper {
+  border: 0;
+  background-color: var(--color-accent);
+}
+/*Button icon*/
+.lgd-page-section--bg-colour-2 .link.link--button-style .lgd-icon {
+  fill: var(--color-white);
+}
+/*Link icon*/
+.lgd-page-section--bg-colour-2 .link.paragraph:not(.link--button-style) .lgd-icon {
+  fill: var(--color-white);
+}
+
+#sliding-popup.sliding-popup-top {
+  background: var(--color-black);
+  text-align: left;
+  transition: none;
+  position: relative;
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice .hidden {
+  display: none;
+}
+
+#sliding-popup.sliding-popup-top .eu-cookie-compliance-banner {
+  float: none;
   display: flex;
+  max-width: 1170px;
+  margin: auto;
+  padding: 20px 15px;
+}
+
+#sliding-popup.sliding-popup-top .popup-content .row {
+  display: flex;
+  width: 100%;
   flex-direction: column;
-  text-decoration: none;
   align-items: flex-start;
 }
 
-.lgd-prev-next__list-item-direcion {
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-message {
+  float: none;
+  max-width: none;
   display: flex;
-  padding-bottom: var(--spacing-small);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 20px;
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice .lgd-row {
+  align-items: center;
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-message h2,
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-message h3,
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-message h4 {
+  color: var(--color-white);
+  padding-right: 20px;
+  font-size: var(--font-size-h4);
+}
+
+/* Service landing pages icon alignment - From components/service-landing-page.css */
+.service-landing-page__service-icon svg,
+.lgd-topic-list-builder__service-icon svg{
+  margin-top: var(--spacing-smaller);
+}
+
+/* Publications teaser on service landing pages */
+.lgd-teaser__content--localgov-publication-cover-page ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Service landing pages column fix */
+.lgd-topic-list-builder__service {
+  width: calc(100% - var(--grid-column-spacing));
+}
+
+@media screen and (min-width: 48rem) {
+  .lgd-topic-list-builder__service {
+      width: calc(50% - var(--grid-column-spacing));
+  }
+}
+
+
+/*Copy of Cookie bar CSS, this is not loading correctly via eu_cookie_compliance_banner.css*/
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 15px 0;
+  min-width: 260px;
+  align-self: flex-start;
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-buttons i {
+  color: var(--color-white);
+}
+
+@media (width > 768px) {
+  #sliding-popup.sliding-popup-top .popup-content .row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-message {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #sliding-popup.sliding-popup-top .cookies-notice .eu-cookie-compliance-buttons {
+    align-self: flex-end;
+  }
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice p:not(.h3) {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice a {
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice a:focus {
+  color: var(--color-black);
+}
+
+#sliding-popup.sliding-popup-top .cookies-notice .d-none {
+  display: none !important;
+}
+
+@media (width > 992px) {
+  .cookies-notice .d-lg-block {
+    display: block !important;
+  }
+}
+
+/*Prev next specific to publications */
+/*Make previous and next stack vertically */
+.lgd-prev-next.lgd-prev-next--publications ul.lgd-prev-next__list {
+  flex-direction: column;
+  margin-top: var(--spacing-larger);
+}
+
+/*Space between previous and next when stacked vertically */
+.lgd-prev-next.lgd-prev-next--publications ul.lgd-prev-next__list li.lgd-prev-next__list-item {
+  margin-inline-end: 0;
+  margin-bottom: var(--spacing-smaller);
+}
+
+/*Make contents of prev next button align horizontally  */
+.lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__link {
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0;
+}
+
+/*Remove padding from description inside prev next button  */
+.lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__list-item--prev .lgd-prev-next__title {
+  padding-inline-start: 0;
+}
+
+.lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__link:hover {
+  background-color: var(--button-bg-color-hover);
+  border: 0;
+}
+
+.lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__link:focus{
+  background-color: var(--color-focus);
+  border: 0;
+}
+
+.lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__link:focus .lgd-prev-next__icon path {
+  fill: var(--color-black);
 }

@@ -67,8 +67,6 @@ body {
   --sidebar-exposed-form-item-spacing: 10px;
   --header-search-button-bg-color: var(--color-black);
   --external-link-icon-color: var(--color-link);
-  --menu-sub-menu-background-colour: var(--color-grey);
-  --menu-sub-menu-link-colour: var(--header-background-color);
   --menu-sub-menu-toggle-width: 20px;
   --menu-sub-menu-toggle-height: 20px;
   --minimum-clickable-icon-size: 20px;
@@ -81,6 +79,7 @@ body {
   --sidebar-exposed-form-padding-horizontal: 0; 
   --color-page-section-background-color-3: var(--color-light-grey);
   --color-page-section-background-color-3-text-color: var(--color-page-section-text-color);
+  --color-page-section-background-color-3-link-color: var(--color-link);
   --arrow-down: "\f063";
   --arrow-up: "\f062";
   --arrow-right: "\f061";
@@ -107,6 +106,8 @@ body {
   --location-dot-icon: "\f3c5";
   --sterling-sign-icon: "\f154";
   --map-location-dot-icon: "\f5a0";
+  --quote-left-icon: "\f10d";
+  --quote-right-icon: "\f10e";
   --btn-start-icon-size: 1rem;
   --btn-start-icon-top: 0;
   --guide-nav-column-count: 1;
