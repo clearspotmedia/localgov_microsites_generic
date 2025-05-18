@@ -1,14 +1,17 @@
-/*Site alert*/
+/*Site alert banners*/
 
+/*Smaller title when showing titke field*/
 .localgov-alert-banner .localgov-alert-banner__title {
   font-size: 1.5rem;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
 
+/*Lnk in content weight*/
 .localgov-alert-banner .localgov-alert-banner--content-link {
   font-weight: 600;
 }
 
+/*Stacks hide button underneath on mobile*/
 .localgov-alert-banner .localgov-alert-banner__inner {
   display: flex;
   align-items: flex-start;
@@ -17,6 +20,7 @@
   padding: 15px 0;
 }
 
+/*Moves hide button to side on desktop*/
 @media screen and (width >= 768px) {
   .localgov-alert-banner .localgov-alert-banner__inner {
     align-items: center;
@@ -24,11 +28,14 @@
   }
 }
 
+/*Icon position to left of alert*/
 .localgov-alert-banner .localgov-alert-banner__content {
   position: relative;
   padding-left: 25px;
 }
 
+
+/*Icon to left of alert*/
 .localgov-alert-banner .localgov-alert-banner__content:before {
   position: absolute;
   display: block;
@@ -42,6 +49,7 @@
   font-weight: 900;
 }
 
+/*Alert content*/
 .localgov-alert-banner .localgov-alert-banner__content > div p {
   padding: 12px 0;
   margin: 0;
@@ -54,6 +62,7 @@
   }
 }
 
+/*Alert hide button*/
 .localgov-alert-banner__close {
   text-decoration: underline;
   white-space: nowrap;

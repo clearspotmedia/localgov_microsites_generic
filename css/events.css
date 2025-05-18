@@ -1,69 +1,72 @@
 /*Events content types*/
 
-/*Marging above add to calendar*/
+/*Margin above add to calendar*/
 .localgov-add-to-calendar:has(+ *) {
   margin-top: var(--vertical-rhythm-spacing);
 }
 
-/*Position relative on taxonomy wrappers*/
+/*Taxonomy wrappers*/
+.field--name-localgov-event-categories,
 .field--name-localgov-event-locality,
-.field--name-localgov-event-price,
-.field--name-localgov-event-provider {
-  padding-left: var(--spacing-larger);
+.field--name-localgov-event-provider,
+.field--name-localgov-event-venue {
+  padding-left: var(--spacing);
   position: relative;
-}
-
-
-/*Icons on taxonomy wrappers - Categories*/
-.field--name-localgov-event-categories .field__item {
-  position: relative;
+  font-size: var(--font-size-small);
 }
 
 /*Icons on taxonomy wrappers - Categories*/
 .field--name-localgov-event-categories .field__item:before {
+  display: block;
   content: var(--tags-icon);
   font-family: var(--font-fa-free);
   font-weight: 900;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-accent-2);
   margin-right: var(--spacing-smaller);
+  margin-top: var(--spacing-smallest);
+  position: absolute;
+  left: 0;
 }
 
 /*Icons on taxonomy wrappers - Locality*/
-.field--name-localgov-event-locality:before {
+.field--name-localgov-event-locality .field__item:before {
+  display: block;
   content: var(--map-location-dot-icon);
   font-family: var(--font-fa-free);
   font-weight: 900;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-accent-2);
+  margin-right: var(--spacing-smaller);
+  margin-top: var(--spacing-smallest);
   position: absolute;
   left: 0;
 }
 
 /*Icons on taxonomy wrappers - Provider*/
-.field--name-localgov-event-provider:before {
-  content: var(--location-dot-icon);
+.field--name-localgov-event-provider .field__item:before {
+  display: block;
+  content: var(--user-icon);
   font-family: var(--font-fa-free);
   font-weight: 900;
-  font-size: var(--font-size-medium);
-  position: absolute;
-  left: 0;
-}
-
-/*Icons on taxonomy wrappers - Price*/
-.field--name-localgov-event-price:before {
-  content: var(--sterling-sign-icon);
-  font-family: var(--font-fa-free);
-  font-weight: 900;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-accent-2);
+  margin-right: var(--spacing-smaller);
+  margin-top: var(--spacing-smallest);
   position: absolute;
   left: 0;
 }
 
 /*Icons on taxonomy wrappers - Categories*/
 .field--name-localgov-event-venue:before {
+  display: block;
   content: var(--location-dot-icon);
   font-family: var(--font-fa-free);
   font-weight: 900;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-accent-2);
+  margin-right: var(--spacing-smaller);
+  margin-top: var(--spacing-smallest);
   position: absolute;
   left: 0;
 }

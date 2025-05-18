@@ -70,35 +70,8 @@ main h1 {
   color: var(--button-bg-color);
 }
 
-.lgd-teaser__content--localgov-news-article .field--name-localgov-news-date.field--type-datetime {
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.lgd-teaser__content--localgov-news-article a {
-  text-decoration: underline;
-}
-
-.lgd-teaser__content--localgov-news-article a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
-}
-
 aside.lgd-row__one-third {
   padding-top: 1.5rem;
-}
-
-.microsite-footer__housekeeping ul:not(.contextual-links) {
-  padding: 0;
-}
-
-footer p,
-footer ul {
-  font-size: 1rem;
-}
-
-.region-microsites-footer a:focus {
-  color: var(--color-black);
 }
 
 /*Page builder blocks overrides*/
@@ -345,4 +318,9 @@ footer ul {
 
 .lgd-prev-next.lgd-prev-next--publications .lgd-prev-next__link:focus .lgd-prev-next__icon path {
   fill: var(--color-black);
+}
+
+/* /events page teaser fix*/
+.view-localgov-events-listing .views-row {
+  display: inline-grid;
 }

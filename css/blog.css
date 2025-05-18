@@ -2,103 +2,28 @@
 
 /*Remove duplicate keyline*/
 .view-localgov-blog-list .view-content {
-    border-top: 0;
+  border-top: 0;
 }
 
 /*Blog Featured item 1*/
 .field--name-localgov-blog-channel-featured > .field__items > .field__item:first-of-type {
-    padding: var(--spacing-largest);
+  padding: var(--spacing-largest);
 }
 
 /*Blog Featured item 1 content*/
-.field--name-localgov-blog-channel-featured > .field__items > .field__item:first-of-type  .lgd-teaser__content--localgov-blog-post {
-    margin-right: var(--spacing-largest);
+.field--name-localgov-blog-channel-featured
+  > .field__items
+  > .field__item:first-of-type
+  .lgd-teaser__content--localgov-blog-post {
+  margin-right: var(--spacing-largest);
 }
 
 /*Blog Featured item 1 picture*/
 .field__item picture {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .field--name-localgov-blog-channel-featured .lgd-teaser__content--localgov-blog-post {
-    margin-right: var(--spacing-largest);
+  margin-right: var(--spacing-largest);
 }
 
-/*Events content types*/
-
-/*Marging above add to calendar*/
-.localgov-add-to-calendar:has(+ *) {
-    margin-top: var(--vertical-rhythm-spacing);
-  }
-  
-  /*Position relative on taxonomy wrappers*/
-  .field--name-localgov-event-locality,
-  .field--name-localgov-event-price,
-  .field--name-localgov-event-provider {
-    padding-left: var(--spacing-larger);
-    position: relative;
-  }
-  
-  body{
-    --tags-icon: "\f02c";
-    --location-dot-icon: "\f3c5";
-    --sterling-sign-icon: "\f154";
-    --map-location-dot-icon: "\f5a0";
-  }
-  
-  
-  /*Icons on taxonomy wrappers - Categories*/
-  .field--name-localgov-event-categories .field__item {
-    position: relative;
-  }
-  
-  
-  /*Icons on taxonomy wrappers - Categories*/
-  .field--name-localgov-event-categories .field__item:before {
-    content: var(--tags-icon);
-    font-family: var(--font-fa-free);
-    font-weight: 900;
-    font-size: var(--font-size-medium);
-    margin-right: var(--spacing-smaller);
-  }
-  
-  /*Icons on taxonomy wrappers - Locality*/
-  .field--name-localgov-event-locality:before {
-    content: var(--map-location-dot-icon);
-    font-family: var(--font-fa-free);
-    font-weight: 900;
-    font-size: var(--font-size-medium);
-    position: absolute;
-    left: 0;
-  }
-  
-  /*Icons on taxonomy wrappers - Provider*/
-  .field--name-localgov-event-provider:before{
-    content: var(--location-dot-icon);
-    font-family: var(--font-fa-free);
-    font-weight: 900;
-    font-size: var(--font-size-medium);
-    position: absolute;
-    left: 0;
-  }
-  
-  /*Icons on taxonomy wrappers - Price*/
-  .field--name-localgov-event-price:before{
-    content: var(--sterling-sign-icon);
-    font-family: var(--font-fa-free);
-    font-weight: 900;
-    font-size: var(--font-size-medium);
-    position: absolute;
-    left: 0;
-  }
-  
-  
-  /*Icons on taxonomy wrappers - Categories*/
-  .field--name-localgov-event-venue:before{
-    content: var(--location-dot-icon);
-    font-family: var(--font-fa-free);
-    font-weight: 900;
-    font-size: var(--font-size-medium);
-    position: absolute;
-    left: 0;
-  }

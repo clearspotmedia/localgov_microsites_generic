@@ -10,12 +10,10 @@
   font-size: var(--font-size-h2);
 }
 
-
 /*Hide banner primary content from directory listing*/
 .page-node-type-localgov-directory .view-content .banner--primary .banner__content {
   display: none;
 }
-
 
 /*Directory venue, page, and promo page content wrapper*/
 .page-node-type-localgov-directories-venue fieldset,

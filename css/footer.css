@@ -7,3 +7,16 @@
     width: 100%;
   }
 }
+
+.microsite-footer__housekeeping ul:not(.contextual-links) {
+  padding: 0;
+}
+
+footer p,
+footer ul {
+  font-size: 1rem;
+}
+
+.region-microsites-footer a:focus {
+  color: var(--color-black);
+}

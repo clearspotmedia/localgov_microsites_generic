@@ -1,3 +1,4 @@
+/*Banner primary is a image title and summary*/
 .banner--primary .banner__content {
   padding: var(--spacing-large) var(--spacing-large);
 }
