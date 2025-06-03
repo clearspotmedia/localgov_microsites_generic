@@ -1,6 +1,6 @@
 # LocalGov Microsites Generic Theme
 
-A sub theme of LocalGov Microsites Base, this theme prettifies an out the box microsite, while maintaining full edibility of brand settings in the CMS.
+A sub theme of LocalGov Microsites Base, this theme prettifies an out of the box microsite, while maintaining full edibility of brand settings in the CMS.
 
 UI improvements
 - Search bar respositioned into main header
@@ -11,9 +11,15 @@ UI improvements
 
 ## Installation
 
-Install this theme in your Drupal project via zip upload, or clone to the custom theme directory:
+Install this theme in your Drupal project via composer, zip upload, or clone to the contrib theme directory:
 
-web > themes > custom 
+web > themes > contrib
+
+### Installation via Composer:
+```
+$ composer config repositories.clearspotmedia/localgov_microsites_generic vcs git@github.com:clearspotmedia/localgov_microsites_generic.git
+$ composer require clearspotmedia/localgov_microsites_generic
+```
 
 ### Optional modules
 
