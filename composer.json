@@ -1,0 +1,9 @@
+{
+    "name": "clearspotmedia/localgov_microsites_generic",
+    "description": "A sub theme that prettifies your LocalGovMicrosite, while maintaining full design control in the Drupal design settings.",
+    "type": "drupal-theme",
+    "require": {
+        "localgovdrupal/localgov_microsites_base": "^2.0"
+    },
+    "license": "GPL-2.0-or-later"
+}
