@@ -2,6 +2,10 @@ a {
   text-decoration: underline;
 }
 
+.full .field--name-localgov-text{
+  max-width: 100% !important;
+}
+
 .full .field--name-localgov-page-summary {
   font-size: 1.25rem;
   padding-bottom: var(--spacing);
