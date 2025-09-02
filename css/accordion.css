@@ -1,0 +1,19 @@
+.accordion-pane__title button, .accordion-pane__title button[aria-expanded="true"] {
+    background: none !important;
+    background-color: none !important;
+}
+
+.accordion-pane__title button:hover, .accordion-pane__title button[aria-expanded="true"]:hover  {
+    background: none !important;
+    background-color: none !important;
+    box-shadow: inset 0 -4px var(--color-black);
+}
+
+.accordion--initialised .accordion-pane__content--open {
+    padding: .5em 0 1.5em 0;
+}
+
+button.accordion-toggle-all {
+    padding: .5em;
+    font-size: 1em;
+}

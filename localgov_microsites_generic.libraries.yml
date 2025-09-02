@@ -13,6 +13,11 @@ base:
     theme:
       css/base.css: { weight: 200 }
 
+accordion:
+  css:
+    theme:
+      css/accordion.css: { weight: 200 }
+
 alert-banner:
   css:
     theme:

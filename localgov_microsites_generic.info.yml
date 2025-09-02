@@ -11,6 +11,8 @@ libraries-extend:
     - localgov_microsites_generic/grid
   localgov_microsites_base/base:
     - localgov_microsites_generic/base
+  localgov_microsites_base/accordion:
+    - localgov_microsites_generic/accordion
   localgov_base/alert-banner:
     - localgov_microsites_generic/alert-banner
   eu_cookie_compliance/eu_cookie_compliance_bare:
